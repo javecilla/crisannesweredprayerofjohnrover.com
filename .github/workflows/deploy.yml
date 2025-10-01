@@ -1,0 +1,41 @@
+name: Deploy Static Website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get the latest code
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY_DEMO }}" > deploy_key
+          chmod 600 deploy_key
+          ssh-keyscan -H ${{ secrets.REMOTE_HOST_DEMO }} >> ~/.ssh/known_hosts
+
+      - name: Deploy with rsync
+        run: |
+          rsync -avzr --delete \
+            -e "ssh -p ${{ secrets.REMOTE_PORT_DEMO }} -i deploy_key -o StrictHostKeyChecking=no" \
+            --exclude='.git/**' \
+            --exclude='.github/**' \
+            --exclude='README.md' \
+            --exclude='.vscode/**' \
+            --exclude='deploy_key' \
+            ./ ${{ secrets.REMOTE_USER_DEMO }}@${{ secrets.REMOTE_HOST_DEMO }}:${{ secrets.REMOTE_TARGET_DEMO }}/
+
+      - name: Set file permissions
+        run: |
+          ssh -i deploy_key -p ${{ secrets.REMOTE_PORT_DEMO }} -o StrictHostKeyChecking=no \
+            ${{ secrets.REMOTE_USER_DEMO }}@${{ secrets.REMOTE_HOST_DEMO }} \
+            "cd ${{ secrets.REMOTE_TARGET_DEMO }} && find . -type f -exec chmod 644 {} \; && find . -type d -exec chmod 755 {} \;"
+          rm -f deploy_key
