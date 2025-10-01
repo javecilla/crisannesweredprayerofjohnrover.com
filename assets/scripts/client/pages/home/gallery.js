@@ -3,7 +3,29 @@
 | GALLERY CAROUSEL FUNCTIONALITY
 |--------------------------------------------------------------------------
 |
-| This will load fake data gallery for now in a coursel.
+| Scripts for Gallery Carousel ng website. Ang gallery na 'to ay
+| nag-didisplay ng items in groups of 3 per slide.
+|
+| Features:
+| 1. Multiple Items: 3 items per slide ang display
+| 2. Navigation Buttons: May prev/next buttons para sa pag-navigate
+| 3. Smart Dots: Maximum of 5 dots lang ang visible kahit maraming slides
+| 4. Dynamic Generation: Naka-separate ang data sa presentation
+|
+| Paano gumagana:
+| - Nag-generate ng fake data muna (20 items) for testing
+| - 3 items per slide ang layout
+| - Auto-hide ang prev/next buttons pag nasa first/last slide
+| - Responsive dots na nag-adapt sa total number of slides
+|
+| Para sa developers:
+| - Para mag-add ng actual data, palitan lang yung fakeDataCarousel array
+| - Each item dapat may properties na: thumbnail, name, description
+| - Pwedeng i-adjust ang itemsPerSlide variable kung ilan items gusto per slide
+| - Pwedeng i-customize ang maxDots (currently set to 5) para sa navigation
+|
+| Note: Sa ngayon, dummy data pa lang ang gamit. I-update lang ito kapag 
+| ready na ang actual API integration.
 |
 */
 document.addEventListener('DOMContentLoaded', () => {

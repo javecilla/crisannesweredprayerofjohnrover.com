@@ -101,14 +101,14 @@
 
 .testimonial .context {
   position: relative;
-  padding-left: 150px;
+  padding-left: 200px;
 }
 
 .testimonial .context::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 60%;
   width: 100px;
   height: 100px;
   background-image: url('/assets/images/quote-icon.png');
@@ -131,6 +131,44 @@
   line-height: 1.6;
   color: var(--color-semi-dark);
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.testimonial .testimonial-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.testimonial .testimonial-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-semi-dark);
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial .testimonial-dots span.active {
+  opacity: 1;
+}
+
+.testimonial .testimonial-slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial .testimonial-slide.active {
+  display: block;
+  opacity: 1;
 }
 
 @media (max-width: 991.98px) {
