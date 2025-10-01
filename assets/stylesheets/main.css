@@ -1,0 +1,15 @@
+:root {
+  --main-font: 'inter';
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-semi-dark: #29292a;
+  --color-yellow: #f6a21e;
+  --color-green: #267a37;
+  --color-light-gray: #f5f5f5;
+  --color-orange: #f6a21e;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}

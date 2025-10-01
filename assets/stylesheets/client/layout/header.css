@@ -1,0 +1,38 @@
+.offcanvas {
+  width: 200px !important;
+}
+
+.quick-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links li {
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.quick-links li:hover {
+  background-color: #f8f9fa;
+  transform: translateX(5px);
+}
+
+.quick-links li a {
+  color: #495057;
+  text-decoration: none;
+  display: block;
+  font-size: 0.95rem;
+}
+
+.quick-links li.active a {
+  color: #030303;
+  font-weight: 600;
+  font-weight: bolder;
+}
+.offcanvas-body {
+  margin-top: -20px;
+}
