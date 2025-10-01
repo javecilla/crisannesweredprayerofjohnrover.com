@@ -1,0 +1,38 @@
+name: Deploy Static Website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get the latest code
+        uses: actions/checkout@v4
+
+      - name: Deploy with rsync
+        uses: burnett01/rsync-deployments@5.2.1
+        with:
+          switches: -avzr --delete --exclude='.git/**' --exclude='.github/**' --exclude='.gitignore' --exclude='.gitattributes' --exclude='README.md' --exclude='site.ssh.credentails.ini'
+          path: .
+          remote_path: ${{ secrets.REMOTE_TARGET_DEMO }}
+          remote_host: ${{ secrets.REMOTE_HOST_DEMO }}
+          remote_port: ${{ secrets.REMOTE_PORT_DEMO }}
+          remote_user: ${{ secrets.REMOTE_USER_DEMO }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY_DEMO }}
+
+      - name: Set file permissions
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: |
+            cd ${{ secrets.REMOTE_TARGET_DEMO }}
+            find . -type f -exec chmod 644 {} \;
+            find . -type d -exec chmod 755 {} \;
+          host: ${{ secrets.REMOTE_HOST_DEMO }}
+          username: ${{ secrets.REMOTE_USER_DEMO }}
+          privateKey: ${{ secrets.SSH_PRIVATE_KEY_DEMO }}
