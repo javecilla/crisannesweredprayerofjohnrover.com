@@ -15,23 +15,20 @@ jobs:
       - name: Get the latest code
         uses: actions/checkout@v4
 
-      - name: Install SSH Key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY_DEMO }}
-          known_hosts: unnecessary
-          if_key_exists: replace
-
-      - name: Adding Known Hosts
-        run: ssh-keyscan -H ${{ secrets.REMOTE_HOST_DEMO }} >> ~/.ssh/known_hosts
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY_DEMO }}" > ~/.ssh/id_rsa_clientdemo
+          chmod 600 ~/.ssh/id_rsa_clientdemo
+          ssh-keyscan -H ${{ secrets.REMOTE_HOST_DEMO }} >> ~/.ssh/known_hosts
 
       - name: Deploy with rsync
-        uses: burnett01/rsync-deployments@5.2.1
-        with:
-          switches: -avzr --delete --exclude='.git/**' --exclude='.github/**' --exclude='README.md' --exclude='.vscode/**'
-          path: .
-          remote_path: ${{ secrets.REMOTE_TARGET_DEMO }}
-          remote_host: ${{ secrets.REMOTE_HOST_DEMO }}
-          remote_port: ${{ secrets.REMOTE_PORT_DEMO }}
-          remote_user: ${{ secrets.REMOTE_USER_DEMO }}
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY_DEMO }}
+        run: |
+          rsync -avzr --delete \
+            -e "ssh -p ${{ secrets.REMOTE_PORT_DEMO }} -i ~/.ssh/id_rsa_clientdemo -o StrictHostKeyChecking=no -o IdentitiesOnly=yes" \
+            --exclude='.git/**' \
+            --exclude='.github/**' \
+            --exclude='README.md' \
+            --exclude='.vscode/**' \
+            --exclude='deploy_key' \
+            ./ ${{ secrets.REMOTE_USER_DEMO }}@${{ secrets.REMOTE_HOST_DEMO }}:${{ secrets.REMOTE_TARGET_DEMO }}/
