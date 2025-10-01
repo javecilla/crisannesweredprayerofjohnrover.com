@@ -189,12 +189,31 @@
   .testimonial .right-content {
     margin-top: 100px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .testimonial .testimonial-slides {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .testimonial .testimonial-dots {
+    position: relative;
+    width: 100%;
     justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .testimonial .right-content .card {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .testimonial .profile-container {
     text-align: start;
-    margin-top: 45px;
+    margin-top: -10px !important;
   }
 
   .testimonial .profile-container img {
@@ -203,7 +222,7 @@
   }
 
   .testimonial .profile-container h6 {
-    font-size: 1.35;
+    font-size: 1.35rem;
     margin-top: -60px;
   }
 
@@ -218,6 +237,9 @@
   .testimonial .context {
     position: relative;
     padding-left: 140px;
+  }
+  .testimonial .context::before {
+    top: 40%;
   }
 }
 
@@ -246,7 +268,7 @@
 
   .testimonial .profile-container {
     text-align: start;
-    margin-top: 45px;
+    margin-top: -10px !important;
   }
 
   .testimonial .profile-container img {
@@ -270,5 +292,9 @@
   .testimonial .context {
     position: relative;
     padding-left: 140px;
+  }
+
+  .testimonial .context::before {
+    top: 40%;
   }
 }

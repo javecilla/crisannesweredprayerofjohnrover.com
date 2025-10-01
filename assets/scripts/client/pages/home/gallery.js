@@ -3,7 +3,7 @@
 | GALLERY CAROUSEL FUNCTIONALITY
 |--------------------------------------------------------------------------
 |
-| Scripts for Gallery Carousel ng website. Ang gallery na 'to ay
+| Scripts for Gallery Carousel ng website. This gallery na
 | nag-didisplay ng items in groups of 3 per slide.
 |
 | Features:
