@@ -15,6 +15,16 @@ jobs:
       - name: Get the latest code
         uses: actions/checkout@v4
 
+      - name: Setup deployment environment
+        uses: garygrossgarten/github-action-ssh@release
+        with:
+          command: |
+            set -e
+            mkdir -p ${{ secrets.REMOTE_TARGET_DEMO }}
+          host: ${{ secrets.REMOTE_HOST_DEMO }}
+          username: ${{ secrets.REMOTE_USER_DEMO }}
+          privateKey: ${{ secrets.SSH_PRIVATE_KEY_DEMO }}
+
       - name: Deploy with rsync
         uses: burnett01/rsync-deployments@5.2.1
         with:
