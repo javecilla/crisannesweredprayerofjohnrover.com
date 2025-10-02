@@ -26,7 +26,6 @@
   opacity: 0.9;
 }
 
-/* Responsive Design */
 @media (max-width: 991.98px) {
   .about h2 {
     font-size: 2.2rem;

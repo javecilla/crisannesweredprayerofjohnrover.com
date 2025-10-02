@@ -1,0 +1,111 @@
+.values {
+  background-color: var(--color-white);
+  padding: 5rem 0;
+  margin-top: 5rem;
+}
+.values .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+}
+.values .container h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 3rem;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.wrapper .card {
+  flex: 1 1 calc(50% - 2rem);
+  min-width: 100px;
+  margin: 0;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  background: transparent;
+  padding-bottom: 8rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .values {
+    margin-top: 0.2rem;
+  }
+  .wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .wrapper .card {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .wrapper .card img {
+    height: 240px;
+  }
+
+  .values .container {
+    padding: 0 1rem;
+  }
+}
+
+.wrapper .card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+.wrapper .card .content {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 160px;
+  padding: 1.5rem;
+  background: var(--color-white);
+  text-align: start;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper .card .content h5 {
+  margin-bottom: 0.5rem;
+  color: var(--color-dark);
+  font-weight: bolder;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.wrapper .card .content p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
