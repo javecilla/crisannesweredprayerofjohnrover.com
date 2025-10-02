@@ -5,15 +5,23 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://voting.goldenmindsbulacan.com/</loc>
+  <loc>https://website-079a545a.fee.xnf.temporary.site/</loc>
   <lastmod>2024-09-03T03:59:43+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://voting.goldenmindsbulacan.com/candidates/lakan-lakambini-at-lakandyosa-2024</loc>
+  <loc>https://website-079a545a.fee.xnf.temporary.site/about-us.html</loc>
   <lastmod>2024-09-03T03:59:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-
+<url>
+  <loc>https://website-079a545a.fee.xnf.temporary.site/community.html</loc>
+  <lastmod>2024-09-03T03:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://website-079a545a.fee.xnf.temporary.site/terms-and-conditions.html</loc>
+  <lastmod>2024-09-03T03:59:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 </urlset>

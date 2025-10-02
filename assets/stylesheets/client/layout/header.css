@@ -1,5 +1,5 @@
 .offcanvas {
-  width: 200px !important;
+  width: 220px !important;
 }
 
 .quick-links {
@@ -13,7 +13,7 @@
   border-radius: 8px;
   transition: all 0.2s ease;
   cursor: pointer;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .quick-links li:hover {

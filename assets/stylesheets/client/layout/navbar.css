@@ -15,20 +15,19 @@
 .navbar-nav .nav-link {
   font-size: 1.2rem;
   font-weight: 500;
-  transition: color 0.2s ease;
-  text-decoration: underline;
+  transition: 0.3s all ease;
   color: var(--color-black);
 }
 
 .navbar-nav .nav-link.active {
   color: var(--color-black);
   font-weight: bolder;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .navbar-nav .nav-link:hover {
   color: var(--color-semi-dark);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 @media (max-width: 991.98px) {

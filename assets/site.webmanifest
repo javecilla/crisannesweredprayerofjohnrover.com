@@ -1,0 +1,26 @@
+{
+  "name": "Kalat Mo Yaman Ko",
+  "short_name": "Kalat Mo",
+  "description": "Kalat Mo Yaman Ko is a community-driven platform that helps you give away pre-loved items to people who need them.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "/assets/meta/apple-touch-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/meta/favicons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/meta/favicons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}
