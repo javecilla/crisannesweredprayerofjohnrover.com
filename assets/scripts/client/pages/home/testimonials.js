@@ -3,7 +3,7 @@
 | TESTIMONIAL CAROUSEL FUNCTIONALITY
 |--------------------------------------------------------------------------
 |
-| Script para sa testimonial carousel ng website. 
+| Script para sa testimonial carousel ng website.
 | Features ng script na 'to:
 |
 | 1. Auto-Slide: May automatic na pag-switch ng testimonials every 5 seconds
@@ -68,6 +68,53 @@ document.addEventListener('DOMContentLoaded', () => {
       content: `As a student, this platform has been incredible. Not only have I found useful items 
         for my studies, but I've also met amazing people who share the same values about sustainability 
         and community support. It's more than just exchanging items.`
+    },
+    {
+      name: 'Luisa Fernandez',
+      role: 'Local Business Owner',
+      image: '/assets/images/default-profile.png',
+      title: 'Supporting Local Communities',
+      content: `This platform has allowed my business to give back to the community in a meaningful way. 
+        Donating surplus items has not only helped those in need but also strengthened our ties with 
+        local residents. It's a win-win for everyone involved.`
+    },
+    {
+      name: 'Carlos Mendoza',
+      role: 'Tech Enthusiast',
+      image: '/assets/images/default-profile.png',
+      title: 'Innovative and User-Friendly',
+      content: `I love how easy it is to navigate and use this platform. The user interface is intuitive,
+        making it simple to list items or find what I need. The tech behind it is impressive, and it's
+        clear that a lot of thought has gone into creating a seamless experience for users.`
+    },
+    {
+      name: 'Sofia Lopez',
+      role: 'Parent',
+      image: '/assets/images/default-profile.png',
+      title: 'A Lifesaver for Families',
+      content: `As a parent, this platform has been a lifesaver. I've been able to find gently used items
+        for my children, saving money while also teaching them the value of reusing and recycling.`
+    },
+    {
+      name: 'Javier Torres',
+      role: 'Retiree',
+      image: '/assets/images/default-profile.png',
+      title: 'Staying Active and Engaged',
+      content: `In my retirement, I've found a new purpose through this platform. It's a great way to stay active, meet new people, and contribute to the community. I love being part of something that makes a difference.`
+    },
+    {
+      name: 'Elena Cruz',
+      role: 'Artist',
+      image: '/assets/images/default-profile.png',
+      title: 'Inspiring Creativity',
+      content: `This platform has been a source of inspiration for my art. I've found unique materials and items that have sparked new ideas and projects. It's wonderful to see how creativity can flourish through sharing and reusing.`
+    },
+    {
+      name: 'Ricardo Alvarez',
+      role: 'Fitness Enthusiast',
+      image: '/assets/images/default-profile.png',
+      title: 'Staying Fit and Active',
+      content: `This platform has been a game-changer for my fitness journey. I've discovered new workout gear, found workout buddies, and even shared my own equipment. It's all about community support and staying motivated together.`
     }
   ]
 
@@ -121,8 +168,10 @@ document.addEventListener('DOMContentLoaded', () => {
         )
         .join('')
 
-      // Generate dots
-      const dotsHTML = testimonialData
+      // Generate only 8 dots regardless of total slides
+      const maxDots = 8
+      const dotsHTML = Array(Math.min(maxDots, this.slideCount))
+        .fill()
         .map(
           (_, index) => `
         <span class="${index === 0 ? 'active' : ''}"></span>
@@ -155,14 +204,20 @@ document.addEventListener('DOMContentLoaded', () => {
     goToSlide(index) {
       // Remove active class from current slide and dot
       this.slides[this.currentIndex].classList.remove('active')
-      this.dots[this.currentIndex].classList.remove('active')
+      this.dots[this.getDotIndex(this.currentIndex)].classList.remove('active')
 
       // Update current index
       this.currentIndex = index
 
       // Add active class to new slide and dot
       this.slides[this.currentIndex].classList.add('active')
-      this.dots[this.currentIndex].classList.add('active')
+      this.dots[this.getDotIndex(this.currentIndex)].classList.add('active')
+    },
+
+    getDotIndex(slideIndex) {
+      // Map the slide index to a dot index (0-7)
+      const maxDots = Math.min(8, this.slideCount)
+      return slideIndex % maxDots
     }
   }
 
