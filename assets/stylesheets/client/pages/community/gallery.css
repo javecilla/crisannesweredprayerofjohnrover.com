@@ -1,0 +1,23 @@
+.galleries {
+  background: var(--color-white);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+.tips-and-ideas,
+.events-and-meetups,
+.discussions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+.tips-and-ideas h4,
+.events-and-meetups h4,
+.discussions h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
