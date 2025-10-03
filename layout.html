@@ -211,43 +211,78 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
           <img src="/assets/images/app-logo-name1.png" alt="logo-name" />
         </a>
 
-        <!-- Center Links - Hidden on mobile -->
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="community.html">Community</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="terms-and-conditions.html"
-                >Terms & Conditions</a
-              >
-            </li>
-          </ul>
+        <div id="client-side" class="d-none">
+          <!-- Center Links - Hidden on mobile -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms-and-conditions.html"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right-aligned buttons - Always visible -->
+          <div class="navbar-nav flex-row gap-2">
+            <a
+              href="register.html"
+              class="btn btn-outline-secondary nav-btn nav-btn-register"
+              >Register</a
+            >
+            <a href="login.html" class="btn btn-secondary nav-btn nav-btn-login"
+              >Login</a
+            >
+          </div>
         </div>
 
-        <!-- Right-aligned buttons - Always visible -->
-        <div class="navbar-nav flex-row gap-2">
-          <a
-            href="register.html"
-            class="btn btn-outline-secondary nav-btn nav-btn-register"
-            >Register</a
-          >
-          <a href="login.html" class="btn btn-secondary nav-btn nav-btn-login"
-            >Login</a
-          >
+        <div id="auth-side">
+          <!-- centered search input -->
+          <div class="search-container">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+
+          <!-- right navigations links -->
+          <div class="actions-container">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="items.html">Items</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+            </ul>
+            <img src="/assets/images/profile-anime.png" alt="img" />
+          </div>
         </div>
       </div>
     </nav>
-    <main></main>
+    <main>
+      <h1>content here...</h1>
+    </main>
     <footer>
       <div>
         <div class="container">
