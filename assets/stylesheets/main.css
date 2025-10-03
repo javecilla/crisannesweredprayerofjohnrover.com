@@ -17,3 +17,8 @@
   padding: 0;
   font-family: var(--main-font);
 }
+input.form-control:focus {
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 0.2rem rgba(38, 122, 55, 0.25);
+  background-color: white;
+}
