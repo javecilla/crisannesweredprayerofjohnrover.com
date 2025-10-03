@@ -100,18 +100,20 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
     <link
       rel="stylesheet"
       type="text/css"
-      href="/assets/stylesheets/client/layout/header.css"
+      href="/assets/stylesheets/common/layout/header.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="/assets/stylesheets/client/layout/navbar.css"
+      href="/assets/stylesheets/common/layout/navbar.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="/assets/stylesheets/client/layout/footer.css"
+      href="/assets/stylesheets/common/layout/footer.css"
     />
+
+    <!-- common by component css -->
 
     <!-- custom css -->
     <link
@@ -221,42 +223,44 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
           <img src="/assets/images/app-logo-name1.png" alt="logo-name" />
         </a>
 
-        <!-- Center Links - Hidden on mobile -->
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="community.html">Community</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="terms-and-conditions.html"
-                >Terms & Conditions</a
-              >
-            </li>
-          </ul>
-        </div>
+        <div id="client-side">
+          <!-- Center Links - Hidden on mobile -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="terms-and-conditions.html"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <!-- Right-aligned buttons - Always visible -->
-        <div class="navbar-nav flex-row gap-2">
-          <a
-            href="register.html"
-            class="btn btn-outline-secondary nav-btn nav-btn-register"
-            >Register</a
-          >
-          <a href="login.html" class="btn btn-secondary nav-btn nav-btn-login"
-            >Login</a
-          >
+          <!-- Right-aligned buttons - Always visible -->
+          <div class="navbar-nav flex-row gap-2">
+            <a
+              href="register.html"
+              class="btn btn-outline-secondary nav-btn nav-btn-register"
+              >Register</a
+            >
+            <a href="login.html" class="btn btn-secondary nav-btn nav-btn-login"
+              >Login</a
+            >
+          </div>
         </div>
       </div>
     </nav>

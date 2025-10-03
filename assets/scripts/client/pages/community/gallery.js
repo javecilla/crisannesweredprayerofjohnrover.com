@@ -1,4 +1,4 @@
-import carousel from '../../common/carousel.js'
+import carousel from '../../../common/carousel.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   // Generate 20 fake data entries for testing

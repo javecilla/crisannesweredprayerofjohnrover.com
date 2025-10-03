@@ -95,14 +95,22 @@
 .input-group .password-toggle:focus {
   box-shadow: none;
 }
-
+.input-group .form-control {
+  border-right: none !important;
+}
 .input-group button {
   border: 1px solid #e0e0e0 !important;
   border-top-right-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
   height: 50px;
+  border-left: none !important;
+  color: var(--color-semi-dark);
+  opacity: 0.5;
 }
-
+.input-group button:hover {
+  background: transparent !important;
+  opacity: 0.6;
+}
 .password-toggle .fa-eye-slash {
   display: none;
 }
