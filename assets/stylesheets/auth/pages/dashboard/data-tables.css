@@ -204,8 +204,8 @@
   color: var(--color-green);
   opacity: 0.9;
 }
-.btn {
-  color: white;
+.listing-container .btn {
+  color: var(--color-white);
   border: none;
   padding: 0.5rem 1.5rem;
   border-radius: 20px;
@@ -221,15 +221,16 @@
 .btn-given:hover {
   background-color: var(--color-green);
   opacity: 0.9;
-  color: white;
+  color: var(--color-white);
 }
 .btn-cancel {
   background-color: var(--color-maroon);
+  color: var(--color-white);
 }
 .btn-cancel:hover {
   background-color: var(--color-maroon);
   opacity: 0.9;
-  color: white;
+  color: var(--color-white);
 }
 
 /* Mobile Responsive */
@@ -408,7 +409,7 @@
 
 .btn-request {
   background-color: var(--color-green);
-  color: white;
+  color: var(--color-white);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -421,13 +422,13 @@
 
 .btn-request:hover {
   background-color: var(--color-green);
-  color: white;
+  color: var(--color-white);
   opacity: 0.9;
 }
 
 .btn-remove {
   background-color: var(--color-maroon);
-  color: white;
+  color: var(--color-white);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -440,7 +441,7 @@
 
 .btn-remove:hover {
   background-color: var(--color-maroon);
-  color: white;
+  color: var(--color-white);
   opacity: 0.9;
 }
 
