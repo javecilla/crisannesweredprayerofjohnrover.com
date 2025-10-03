@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" type="image/png" href="/assets/meta/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/meta/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/meta/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/meta/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="sitemap" type="application/xml" href="/assets/sitemap.xml" />
+
+    <!-- Primary Meta Tags -->
+    <title>Profile - Kalat Mo Yaman Ko</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="title" content="Kalat Mo Yaman Ko" />
+    <meta
+      name="description"
+      content="Kalat Mo, Yaman Ko is a community-driven platform that helps you give away
+pre-loved items to people who need them. Promote the 3Rs—Reduce, Reuse,
+and Recycle—while building a circular economy in your own neighborhood."
+    />
+    <meta
+      name="abstract"
+      content="Join a growing movement where your unused items find new purpose.
+Share, receive, and make a difference through reuse, reduce, and recycle."
+    />
+    <meta
+      name="keywords"
+      content="Kalat Mo Yaman Ko, Bulacan State University"
+    />
+    <meta name="copyright" content="Kalat Mo Yaman Ko" />
+
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      name="bingbot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta
+      name="google-site-verification"
+      content="TEST_yn3h_XIX46hpOTXbkr1gnJnX5jjg1Lesyv_xOJHbR9g"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <!-- Twitter -->
+    <!-- Additional SEO Tags -->
+    <!-- Mobile App Meta Tags -->
+    <!-- Geo Tags (Philippines) -->
+    <!-- Schema.org structured data -->
+    <!-- Google Tag Manager -->
+
+    <!-- libs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/libs/bootstrap/bootstrap@5.3.2/css/bootstrap.min.css"
+      loading="eager"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/libs/fontawesome/css/all.min.css"
+    />
+
+    <!-- layout css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/navbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/footer.css"
+    />
+
+    <!-- custom css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/auth/pages/dashboard/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/auth/pages/profile/account.css"
+    />
+  </head>
+  <body>
+    <header class="sticky-top bg-white shadow-sm">
+      <div class="container-fluid py-2">
+        <div class="d-flex justify-content-end">
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            class="menu-content offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title invisible" id="offcanvasExampleLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="quick-links">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="community.html">Community</a>
+                </li>
+                <li>
+                  <a href="terms-and-conditions.html">Terms & Condition</a>
+                </li>
+                <li>
+                  <a href="login.html">Login</a>
+                </li>
+                <li>
+                  <a href="register.html">Register</a>
+                </li>
+                <li>
+                  <a href="items.html">Items</a>
+                </li>
+                <li>
+                  <a href="post-item.html">Post an Item</a>
+                </li>
+                <li>
+                  <a href="specific-item.html">Specific Item</a>
+                </li>
+                <li>
+                  <a href="discussions.html">Discussions</a>
+                </li>
+                <li>
+                  <a href="specific-discussion.html">Specific Discussion</a>
+                </li>
+                <li>
+                  <a href="post-discussion.html">Post a Discussion</a>
+                </li>
+                <li>
+                  <a href="post-photo.html">Post a Photo</a>
+                </li>
+                <li>
+                  <a href="specific-resource.html">Specific Resource</a>
+                </li>
+                <li>
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a href="messaging.html">Messaging</a>
+                </li>
+                <li class="active">
+                  <a href="profile.html">Profile</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/app-logo-name1.png" alt="logo-name" />
+        </a>
+
+        <div id="client-side" class="d-none">
+          <!-- Center Links - Hidden on mobile -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms-and-conditions.html"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right-aligned buttons - Always visible -->
+          <div class="navbar-nav flex-row gap-2">
+            <a
+              href="register.html"
+              class="btn btn-outline-secondary nav-btn nav-btn-register"
+              >Register</a
+            >
+            <a href="login.html" class="btn btn-secondary nav-btn nav-btn-login"
+              >Login</a
+            >
+          </div>
+        </div>
+
+        <div id="auth-side">
+          <!-- centered search input -->
+          <div class="search-container">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+
+          <!-- right navigations links -->
+          <div class="actions-container">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="items.html">Items</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+            </ul>
+            <img src="/assets/images/profile-anime.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="header">
+        <div class="container">
+          <div class="card">
+            <div class="profile-details-container">
+              <img src="/assets/images/profile-anime.png" alt="img" />
+              <div class="info-container">
+                <h3>
+                  <img src="/assets/images/recyle-badge.png" alt="img" /> Nanami
+                  Momozono
+                </h3>
+                <div class="ratings">
+                  Rating:
+                  <ul class="stars">
+                    <li>
+                      <span class="active"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                    <li>
+                      <span class="active"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                    <li>
+                      <span class="active"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                    <li>
+                      <span class="active"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                    <li>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </li>
+                  </ul>
+                  | <span>16 points</span>
+                </div>
+              </div>
+            </div>
+            <nav class="sub-menu">
+              <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a class="active" href="profile.html">Profile</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="account">
+        <div class="container">
+          <div class="account-details">
+            <h4>Account Details</h4>
+            <div class="left-content">
+              <div class="card">
+                <div>
+                  <img src="/assets/images/profile-anime.png" alt="img" />
+                  <label for=""> <input type="file" />Upload Photo </label>
+                </div>
+                <span>Image size should not exceed 2MB.</span>
+              </div>
+            </div>
+            <div class="right-content">
+              <form action="#">
+                <div class="mb-2">
+                  <label for="firstName">Full Name</label>
+                  <div class="row g-3">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="First name"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        First name is required.
+                      </div>
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Last name"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <label for="contactNumber" class="form-label"
+                    >Contact Number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="contactNumber"
+                    name="contactNumber"
+                    placeholder="Contact Number"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Contact number is required.
+                  </div>
+                </div>
+                <div class="action-form">
+                  <button type="button" class="btn btn-success">
+                    Save Changes
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="change-password">
+            <h4>Change Password</h4>
+            <div class="left-content">
+              <div class="mb-2">
+                <label for="currentPassword" class="form-label"
+                  >Current Password</label
+                >
+                <div class="input-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="currentPassword"
+                    name="currentPassword"
+                    placeholder="Current Password"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="btn password-toggle"
+                    data-target="currentPassword"
+                  >
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-eye-slash"></i>
+                  </button>
+                  <div class="invalid-feedback">
+                    Please enter your current password.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-content">
+              <div class="mb-2">
+                <label for="newPassword" class="form-label">New Password</label>
+                <div class="input-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="newPassword"
+                    name="newPassword"
+                    placeholder="New Password"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="btn password-toggle"
+                    data-target="newPassword"
+                  >
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-eye-slash"></i>
+                  </button>
+                  <div class="invalid-feedback">
+                    Please enter your new password.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="confirmPassword" class="form-label"
+                  >Confirm Password</label
+                >
+                <div class="input-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm Password"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="btn password-toggle"
+                    data-target="confirmPassword"
+                  >
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-eye-slash"></i>
+                  </button>
+                  <div class="invalid-feedback">
+                    Please enter your confirm password.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div class="container">
+          <div class="left-content">
+            <img src="/assets/images/app-logo-name2-removebg.png" alt="logo" />
+            <h6>Have questions, feedback, or suggestions?</h6>
+            <p>
+              Whether you're posting an item, requesting something, or simply
+              exploring the community, we're here to help you make the most out
+              of sharing and sustainability. Reach out to our team anytime!
+            </p>
+          </div>
+          <div class="right-content">
+            <h5>CONTACT</h5>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-location-dot"></i> Bulacan
+                  State University</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-envelope"></i>
+                  kmym@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-phone"></i> Need help? Call
+                  us 09917445294</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2025 Kalat Mo, Yaman Ko. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <!-- libs scripts -->
+    <script
+      type="application/javascript"
+      src="/assets/libs/bootstrap/bootstrap@5.3.2/js/bootstrap.min.js"
+      loading="eager"
+    ></script>
+    <script
+      type="application/javascript"
+      src="/assets/libs/fontawesome/js/all.min.js"
+    ></script>
+
+    <!-- custom scripts -->
+  </body>
+</html>
