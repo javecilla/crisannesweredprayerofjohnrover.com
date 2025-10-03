@@ -9,6 +9,8 @@
   max-width: 1050px;
   position: absolute;
   top: 27%;
+  width: 100%;
+  padding: 0 1rem;
 }
 .header .container .card {
   border: none;
@@ -49,6 +51,7 @@
   gap: 0.5rem;
   font-size: 1.1rem;
   color: var(--color-dark);
+  flex-wrap: wrap;
 }
 .ratings ul.stars {
   list-style: none;
@@ -77,11 +80,10 @@ nav.sub-menu {
 nav.sub-menu ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 15rem;
   padding: 1rem 0;
   margin: 0;
-  justify-content: center;
 }
 nav.sub-menu ul li {
   font-size: 1.1rem;
@@ -99,4 +101,134 @@ nav.sub-menu ul li a.active {
 
 .visibility-hidden {
   visibility: hidden;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .header .container {
+    top: 25%;
+  }
+
+  .header .container .card {
+    padding: 1.5rem 2rem 0.5rem 2rem;
+  }
+
+  .card .profile-details-container {
+    gap: 1.5rem;
+  }
+
+  nav.sub-menu ul {
+    gap: 8rem;
+  }
+
+  nav.sub-menu ul li {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .header .container {
+    position: relative;
+    top: 0;
+    padding: 0 1rem;
+  }
+
+  .header .container .card {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+  }
+
+  .card .profile-details-container {
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-details-container img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-details-container .info-container {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .info-container h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .info-container h3 img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .info-container .ratings {
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+
+  ul.stars li span {
+    font-size: 1.1rem;
+  }
+
+  nav.sub-menu ul {
+    gap: 2rem;
+    padding: 0.75rem 0;
+  }
+
+  nav.sub-menu ul li {
+    font-size: 0.95rem;
+  }
+
+  nav.sub-menu ul li a {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .header .container .card {
+    padding: 1rem 0.75rem 0.5rem 0.75rem;
+  }
+
+  .profile-details-container img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .info-container h3 {
+    font-size: 1rem;
+  }
+
+  .info-container .ratings {
+    font-size: 0.85rem;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  ul.stars li span {
+    font-size: 1rem;
+  }
+
+  nav.sub-menu ul {
+    gap: 0.5rem;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+  }
+
+  nav.sub-menu ul li {
+    font-size: 0.85rem;
+  }
+
+  nav.sub-menu ul li a {
+    padding: 0.4rem 0.5rem;
+    white-space: nowrap;
+  }
 }

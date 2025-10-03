@@ -7,6 +7,7 @@
 .metrics .container {
   max-width: 1050px;
   width: 100%;
+  padding: 0 1rem; /* Add padding for mobile */
 }
 .greeting {
   margin-bottom: 2rem;
@@ -24,7 +25,7 @@
 }
 .summary {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 columns for flexibility */
+  grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
 }
 
@@ -40,14 +41,12 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* First 3 cards: each spans 2 columns (2+2+2 = 6) */
 .summary .card:nth-child(1),
 .summary .card:nth-child(2),
 .summary .card:nth-child(3) {
   grid-column: span 2;
 }
 
-/* Last 2 cards: each spans 3 columns (3+3 = 6) */
 .summary .card:nth-child(4),
 .summary .card:nth-child(5) {
   grid-column: span 3;
@@ -75,6 +74,7 @@
   font-size: 0.9rem;
   color: #555;
 }
+
 .charts {
   display: flex;
   justify-content: center;
@@ -109,4 +109,147 @@
   padding: 1rem;
   width: 100%;
   height: 100%;
+}
+
+/* Tablet - Medium screens */
+@media (max-width: 992px) {
+  .greeting h1 {
+    font-size: 1.8rem;
+  }
+
+  .greeting p {
+    font-size: 1rem;
+  }
+
+  .summary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* All cards span full width (2 columns) */
+  .summary .card:nth-child(1),
+  .summary .card:nth-child(2),
+  .summary .card:nth-child(3),
+  .summary .card:nth-child(4),
+  .summary .card:nth-child(5) {
+    grid-column: span 1;
+  }
+
+  .summary .card {
+    padding: 1rem 1.5rem;
+  }
+
+  .charts {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .charts .card {
+    min-height: 350px;
+  }
+}
+
+/* Mobile - Small screens */
+@media (max-width: 768px) {
+  .metrics {
+    padding: 2rem 0;
+  }
+
+  .metrics .container {
+    padding: 0 1rem;
+  }
+
+  .greeting {
+    margin-bottom: 1.5rem;
+  }
+
+  .greeting h1 {
+    font-size: 1.5rem;
+  }
+
+  .greeting h1 span {
+    display: block; /* Stack name on new line if needed */
+  }
+
+  .greeting p {
+    font-size: 0.95rem;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .summary .card:nth-child(1),
+  .summary .card:nth-child(2),
+  .summary .card:nth-child(3),
+  .summary .card:nth-child(4),
+  .summary .card:nth-child(5) {
+    grid-column: span 1;
+  }
+
+  .summary .card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .summary .card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .summary .card h5 {
+    font-size: 1.3rem;
+  }
+
+  .summary .card span {
+    font-size: 0.85rem;
+  }
+
+  .charts {
+    gap: 1rem;
+  }
+
+  .charts .card {
+    padding: 0.75rem;
+    min-height: 320px;
+  }
+
+  .charts .card h6 {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .charts .card > div {
+    padding: 0.5rem;
+  }
+
+  .categoriesGivenChart,
+  .categoriesReceivedChart,
+  .GivenVSReceivedChart {
+    padding: 0.5rem;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .greeting h1 {
+    font-size: 1.3rem;
+  }
+
+  .greeting p {
+    font-size: 0.9rem;
+  }
+
+  .summary .card {
+    padding: 1rem;
+  }
+
+  .summary .card h5 {
+    font-size: 1.2rem;
+  }
+
+  .charts .card {
+    min-height: 280px;
+  }
 }
