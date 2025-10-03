@@ -108,6 +108,11 @@
       type="text/css"
       href="/assets/stylesheets/auth/pages/dashboard/header.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/auth/pages/dashboard/metrics.css"
+    />
   </head>
   <body>
     <header class="sticky-top bg-white shadow-sm">
@@ -245,29 +250,120 @@
           <div class="card">
             <div class="profile-details-container">
               <img src="/assets/images/profile-anime.png" alt="img" />
-              <h3>
-                <img src="/assets/images/recyle-badge.png" alt="img" /> Nanami
-                Momozono
-              </h3>
-              <div>
-                Rating:
-                <ul>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                | <span>16 points</span>
+              <div class="info-container">
+                <h3>
+                  <img src="/assets/images/recyle-badge.png" alt="img" /> Nanami
+                  Momozono
+                </h3>
+                <div class="ratings">
+                  Rating:
+                  <ul class="stars">
+                    <li>
+                      <span class="active"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                    <li>
+                      <span class="active"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                    <li>
+                      <span class="active"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                    <li>
+                      <span class="active"
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </li>
+                    <li>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </li>
+                  </ul>
+                  | <span>16 points</span>
+                </div>
               </div>
             </div>
-            <nav>
+            <nav class="sub-menu">
               <ul>
-                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a class="active" href="dashboard.html">Dashboard</a></li>
                 <li><a href="messages.html">Messages</a></li>
                 <li><a href="profile.html">Profile</a></li>
               </ul>
             </nav>
+          </div>
+        </div>
+      </section>
+      <section class="metrics">
+        <div class="container">
+          <div class="greeting">
+            <h1>
+              <strong>Welcome back, <span>Nanami Momozono</span></strong
+              >!
+            </h1>
+            <p>Here’s what’s happening with your items and requests today.</p>
+          </div>
+          <div class="summary">
+            <div class="card">
+              <img src="/assets/images/hande-offer-icon.png" alt="icon" />
+              <div>
+                <h5>100</h5>
+                <span>Total Items Given</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/images/suntok-icon.png" alt="icon" />
+              <div>
+                <h5>100</h5>
+                <span>Total Items Received</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/images/bookmark-icon.png" alt="icon" />
+              <div>
+                <h5>100</h5>
+                <span>Watchlisted Items</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/images/list-dot-icon.png" alt="icon" />
+              <div>
+                <h5>100</h5>
+                <span>Active Listings</span>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/images/pending-paper-icon.png" alt="icon" />
+              <div>
+                <h5>100</h5>
+                <span>Pending Requests</span>
+              </div>
+            </div>
+          </div>
+          <div class="charts">
+            <div class="card">
+              <h6 class="chart-title">Item Categories Given</h6>
+              <div class="categoriesGivenChart">
+                <!--doughnut chart here-->
+                <canvas id="categoriesGivenChart"></canvas>
+              </div>
+            </div>
+            <div class="card">
+              <h6>Items Given VS Received</h6>
+              <div class="GivenVSReceivedChart">
+                <!--bar chart here-->
+                <canvas id="GivenVSReceivedChart"></canvas>
+              </div>
+            </div>
+            <div class="card">
+              <h6>Item Categories Received</h6>
+              <div class="categoriesReceivedChart">
+                <!--doughnut chart here-->
+                <canvas id="categoriesReceivedChart"></canvas>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -323,6 +419,24 @@
       type="application/javascript"
       src="/assets/libs/fontawesome/js/all.min.js"
     ></script>
+    <!-- <script
+      type="application/javascript"
+      src="/assets/libs/chartjs/chart.js"
+    ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <!-- custom scripts -->
+    <script
+      type="application/javascript"
+      src="/assets/scripts/auth/pages/dashboard/charts/categories-given.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="/assets/scripts/auth/pages/dashboard/charts/categories-received.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="/assets/scripts/auth/pages/dashboard/charts/given-vs-feedback.js"
+    ></script>
   </body>
 </html>
