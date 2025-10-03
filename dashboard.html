@@ -113,6 +113,11 @@
       type="text/css"
       href="/assets/stylesheets/auth/pages/dashboard/metrics.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/auth/pages/dashboard/data-tables.css"
+    />
   </head>
   <body>
     <header class="sticky-top bg-white shadow-sm">
@@ -362,6 +367,308 @@
               <div class="categoriesReceivedChart">
                 <!--doughnut chart here-->
                 <canvas id="categoriesReceivedChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="data-tables">
+        <div class="container">
+          <div class="my-listing listing-container mb-3">
+            <div class="listing-header">
+              <h6>My Listings</h6>
+              <div class="header-actions">
+                <a href="#" class="view-all">View all</a>
+                <button type="button" class="btn btn-post">
+                  <i class="fa-solid fa-plus"></i> Post
+                </button>
+              </div>
+            </div>
+            <div class="listing-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Requests</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="item-cell">
+                      <div class="item-info">
+                        <img
+                          src="/assets/images/default-image.png"
+                          alt="Item"
+                        />
+                        <div class="item-details">
+                          <h6 class="item-name">Item Name</h6>
+                          <p class="item-description">Description...</p>
+                          <span class="item-rating">
+                            <i class="fa-solid fa-star"></i> 3.7
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="status-badge status-active">Active</span>
+                    </td>
+                    <td>May 16, 2004</td>
+                    <td>24</td>
+                    <td class="action-cell">
+                      <button type="button" class="btn-icon" title="Edit">
+                        <i class="fa-solid fa-edit"></i>
+                      </button>
+                      <button type="button" class="btn-icon" title="Delete">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-given">Given</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="item-cell">
+                      <div class="item-info">
+                        <img
+                          src="/assets/images/default-image.png"
+                          alt="Item"
+                        />
+                        <div class="item-details">
+                          <h6 class="item-name">Item Name</h6>
+                          <p class="item-description">Description...</p>
+                          <span class="item-rating">
+                            <i class="fa-solid fa-star"></i> 3.7
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="status-badge status-active">Active</span>
+                    </td>
+                    <td>May 16, 2004</td>
+                    <td>24</td>
+                    <td class="action-cell">
+                      <button type="button" class="btn-icon" title="Edit">
+                        <i class="fa-solid fa-edit"></i>
+                      </button>
+                      <button type="button" class="btn-icon" title="Delete">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-given">Given</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="item-cell">
+                      <div class="item-info">
+                        <img
+                          src="/assets/images/default-image.png"
+                          alt="Item"
+                        />
+                        <div class="item-details">
+                          <h6 class="item-name">Item Name</h6>
+                          <p class="item-description">Description...</p>
+                          <span class="item-rating">
+                            <i class="fa-solid fa-star"></i> 3.7
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="status-badge status-given">Given</span>
+                    </td>
+                    <td>May 16, 2004</td>
+                    <td>24</td>
+                    <td class="action-cell">
+                      <button type="button" class="btn-icon" title="Edit">
+                        <i class="fa-solid fa-edit"></i>
+                      </button>
+                      <button type="button" class="btn-icon" title="Delete">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="my-requests listing-container mb-3">
+            <div class="listing-header">
+              <h6>My Requests</h6>
+              <div class="header-actions">
+                <a href="#" class="view-all">View all</a>
+              </div>
+            </div>
+            <div class="listing-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Giver</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="item-cell">
+                      <div class="item-info">
+                        <img
+                          src="/assets/images/default-image.png"
+                          alt="Item"
+                        />
+                        <div class="item-details">
+                          <h6 class="item-name">Item Name</h6>
+                          <p class="item-description">Description...</p>
+                          <span class="item-rating">
+                            <i class="fa-solid fa-star"></i> 3.7
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="status-badge status-approved">Approved</span>
+                    </td>
+                    <td>May 16, 2004</td>
+                    <td>Name</td>
+                    <td class="action-cell">
+                      <button type="button" class="btn btn-cancel">
+                        Cancel
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="item-cell">
+                      <div class="item-info">
+                        <img
+                          src="/assets/images/default-image.png"
+                          alt="Item"
+                        />
+                        <div class="item-details">
+                          <h6 class="item-name">Item Name</h6>
+                          <p class="item-description">Description...</p>
+                          <span class="item-rating">
+                            <i class="fa-solid fa-star"></i> 3.7
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="status-badge status-denied">Denied</span>
+                    </td>
+                    <td>May 16, 2004</td>
+                    <td>Name</td>
+                    <td class="action-cell">
+                      <button type="button" class="btn btn-cancel">
+                        Cancel
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="item-cell">
+                      <div class="item-info">
+                        <img
+                          src="/assets/images/default-image.png"
+                          alt="Item"
+                        />
+                        <div class="item-details">
+                          <h6 class="item-name">Item Name</h6>
+                          <p class="item-description">Description...</p>
+                          <span class="item-rating">
+                            <i class="fa-solid fa-star"></i> 3.7
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="status-badge status-pending">Pending</span>
+                    </td>
+                    <td>May 16, 2004</td>
+                    <td>Name</td>
+                    <td class="action-cell">
+                      <button type="button" class="btn btn-cancel">
+                        Cancel
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="my-watchlist">
+            <div class="list-header">
+              <h6>My Requests</h6>
+              <div class="header-actions">
+                <a href="#" class="view-all">View all</a>
+              </div>
+            </div>
+            <div class="list-body">
+              <div class="card">
+                <img src="/assets/images/default-image.png" alt="img" />
+                <h6>Item Name</h6>
+                <div>
+                  <button type="button" class="btn btn-request">Request</button>
+                  <button type="button" class="btn btn-remove">Remove</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="/assets/images/default-image.png" alt="img" />
+                <h6>Item Name</h6>
+                <div>
+                  <button type="button" class="btn btn-request">Request</button>
+                  <button type="button" class="btn btn-remove">Remove</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="/assets/images/default-image.png" alt="img" />
+                <h6>Item Name</h6>
+                <div>
+                  <button type="button" class="btn btn-request">Request</button>
+                  <button type="button" class="btn btn-remove">Remove</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="/assets/images/default-image.png" alt="img" />
+                <h6>Item Name</h6>
+                <div>
+                  <button type="button" class="btn btn-request">Request</button>
+                  <button type="button" class="btn btn-remove">Remove</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="/assets/images/default-image.png" alt="img" />
+                <h6>Item Name</h6>
+                <div>
+                  <button type="button" class="btn btn-request">Request</button>
+                  <button type="button" class="btn btn-remove">Remove</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="/assets/images/default-image.png" alt="img" />
+                <h6>Item Name</h6>
+                <div>
+                  <button type="button" class="btn btn-request">Request</button>
+                  <button type="button" class="btn btn-remove">Remove</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="/assets/images/default-image.png" alt="img" />
+                <h6>Item Name</h6>
+                <div>
+                  <button type="button" class="btn btn-request">Request</button>
+                  <button type="button" class="btn btn-remove">Remove</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="/assets/images/default-image.png" alt="img" />
+                <h6>Item Name</h6>
+                <div>
+                  <button type="button" class="btn btn-request">Request</button>
+                  <button type="button" class="btn btn-remove">Remove</button>
+                </div>
               </div>
             </div>
           </div>
