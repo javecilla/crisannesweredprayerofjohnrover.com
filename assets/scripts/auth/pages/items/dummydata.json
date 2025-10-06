@@ -499,6 +499,106 @@
       "condition": "New/Unused",
       "description": "Modern frame set perfect for family photos or wall art.",
       "availability": "Reserved"
+    },
+    {
+      "id": 51,
+      "name": "Bamboo Wall Clock",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Eco-friendly wall clock crafted from sustainable bamboo.",
+      "availability": "Available"
+    },
+    {
+      "id": 52,
+      "name": "Throw Pillow Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Soft cotton throw pillows that add comfort and color to any couch.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 53,
+      "name": "Wooden Lamp Stand",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "For Upcycling/Repair",
+      "description": "Minimalist lamp stand needing a bulb replacement.",
+      "availability": "Available"
+    },
+    {
+      "id": 54,
+      "name": "Ceramic Vase",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Elegant white vase ideal for minimalist home decor.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 55,
+      "name": "Macrame Wall Hanging",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Handwoven wall hanging for boho-inspired interior styling.",
+      "availability": "Available"
+    },
+    {
+      "id": 56,
+      "name": "Indoor Plant Pot",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Modern ceramic pot suitable for small indoor plants or succulents.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 57,
+      "name": "Canvas Wall Art",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Abstract canvas artwork that adds personality to living spaces.",
+      "availability": "Available"
+    },
+    {
+      "id": 58,
+      "name": "Woven Laundry Basket",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Sturdy handwoven basket perfect for storage or laundry organization.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 59,
+      "name": "Aromatherapy Candle Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Set of three soy-based scented candles for a calming home atmosphere.",
+      "availability": "Available"
+    },
+    {
+      "id": 60,
+      "name": "Wooden Puzzle Blocks",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Toys & Games",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Colorful educational puzzle blocks that encourage creativity and problem-solving for kids.",
+      "availability": "Already Requested"
     }
   ]
 }

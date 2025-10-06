@@ -293,7 +293,11 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
           <div class="header">
             <div class="left-content">
               <h3>Kalat Mo, Yaman Ko</h3>
-              <button type="button" class="btn btn-outline-success">
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                id="btn-apply-filter"
+              >
                 <img
                   src="/assets/images/filter-icon.png"
                   width="20"
@@ -301,11 +305,10 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 />
                 Filter
               </button>
-              <!-- active filter comes what filters is generated base on the sidebar filter -->
+
               <div class="active-filters">
                 <span><i class="fa-solid fa-x"></i> Clear Filters</span>
-                <span><i class="fa-solid fa-x"></i> Home & Living</span>
-                <span><i class="fa-solid fa-x"></i> New/Unused</span>
+                <!-- active filter comes what filters is generated base on the sidebar filter -->
               </div>
             </div>
             <div class="right-content">
@@ -330,7 +333,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Clothing & Accessories" />
                       Clothing & Accessories
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -339,7 +342,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Books & Stationery" />
                       Books & Stationery
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -348,7 +351,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Toys & Games" />
                       Toys & Games
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -357,7 +360,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" checked />
+                      <input type="checkbox" value="Home & Living" checked />
                       Home & Living
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -366,7 +369,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Tools & DIY" />
                       Tools & DIY
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -375,7 +378,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Electronics & Gadgets" />
                       Electronics & Gadgets
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -384,7 +387,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Baby & Kids" />
                       Baby & Kids
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -393,7 +396,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="School Supplies" />
                       School Supplies
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -402,7 +405,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Hygiene & Personal Care" />
                       Hygiene & Personal Care
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -411,7 +414,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Pet Supplies" />
                       Pet Supplies
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -420,7 +423,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Hobbies & Crafts" />
                       Hobbies & Crafts
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -429,7 +432,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Kitchen & Pantry" />
                       Kitchen & Pantry
                     </div>
                     <i class="fa-solid fa-plus"></i>
@@ -444,7 +447,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" checked />
+                      <input type="checkbox" value="New/Unused" checked />
                       New/Unused
                     </div>
                   </label>
@@ -452,7 +455,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Gently Used" />
                       Gently Used
                     </div>
                   </label>
@@ -460,7 +463,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="For Upcycling/Repair" />
                       For Upcycling/Repair
                     </div>
                   </label>
@@ -474,7 +477,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Available" />
                       Available
                     </div>
                   </label>
@@ -482,7 +485,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Already Requested" />
                       Already Requested
                     </div>
                   </label>
@@ -490,7 +493,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <label>
                     <div class="checkbox-text">
-                      <input type="checkbox" />
+                      <input type="checkbox" value="Reserved" />
                       Reserved
                     </div>
                   </label>

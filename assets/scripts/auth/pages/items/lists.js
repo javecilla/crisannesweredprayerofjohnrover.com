@@ -14,6 +14,14 @@ const PAGINATION_BUTTONS_TO_SHOW = 3
 let currentPage = 1
 let currentSet = 1
 let items = []
+let filteredItems = []
+
+// State management for filters
+window.selectedFilters = {
+  category: ['Home & Living'],
+  condition: ['New/Unused'],
+  availability: []
+}
 
 let wrapper
 let pagination
@@ -54,14 +62,24 @@ function createItemCard(item) {
 }
 
 function renderItems() {
+  const dataToRender = filteredItems.length > 0 ? filteredItems : items
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE
   const endIndex = startIndex + ITEMS_PER_PAGE
-  const itemsToShow = items.slice(startIndex, endIndex)
+  const itemsToShow = dataToRender.slice(startIndex, endIndex)
   wrapper.innerHTML = itemsToShow.map(createItemCard).join('')
 }
 
 function setupPagination() {
-  const totalPages = Math.ceil(items.length / ITEMS_PER_PAGE)
+  const dataToRender = filteredItems.length > 0 ? filteredItems : items
+  const totalPages = Math.ceil(dataToRender.length / ITEMS_PER_PAGE)
+
+  if (totalPages === 0) {
+    pageItemsContainer.innerHTML = ''
+    prevButton.disabled = true
+    nextButton.disabled = true
+    return
+  }
+
   const startPage = (currentSet - 1) * PAGINATION_BUTTONS_TO_SHOW + 1
   const endPage = Math.min(
     startPage + PAGINATION_BUTTONS_TO_SHOW - 1,
@@ -83,21 +101,25 @@ function setupPagination() {
     pageItemsContainer.appendChild(button)
   }
 
-  // Disable prev/next properly
-  prevButton.disabled = currentSet === 1
+  // Calculate max set
   const maxSet = Math.ceil(totalPages / PAGINATION_BUTTONS_TO_SHOW)
-  nextButton.disabled = currentSet === maxSet
+
+  // Disable/enable prev button
+  prevButton.disabled = currentSet === 1
+
+  // Disable/enable next button
+  nextButton.disabled = currentSet >= maxSet
 }
 
 function nextPage() {
-  const totalPages = Math.ceil(items.length / ITEMS_PER_PAGE)
+  const dataToRender = filteredItems.length > 0 ? filteredItems : items
+  const totalPages = Math.ceil(dataToRender.length / ITEMS_PER_PAGE)
   const maxSet = Math.ceil(totalPages / PAGINATION_BUTTONS_TO_SHOW)
 
   if (currentSet < maxSet) {
     currentSet++
-    // move to the first page of the next set
-    const newPage = (currentSet - 1) * PAGINATION_BUTTONS_TO_SHOW + 1
-    currentPage = newPage
+    // Move to the first page of the next set
+    currentPage = (currentSet - 1) * PAGINATION_BUTTONS_TO_SHOW + 1
     renderItems()
     setupPagination()
   }
@@ -106,9 +128,17 @@ function nextPage() {
 function previousPage() {
   if (currentSet > 1) {
     currentSet--
-    // move to the first page of the previous set
-    const newPage = (currentSet - 1) * PAGINATION_BUTTONS_TO_SHOW + 1
-    currentPage = newPage
+    // Move to the last page of the previous set (FIXED)
+    const dataToRender = filteredItems.length > 0 ? filteredItems : items
+    const totalPages = Math.ceil(dataToRender.length / ITEMS_PER_PAGE)
+    const startPageOfSet = (currentSet - 1) * PAGINATION_BUTTONS_TO_SHOW + 1
+    const endPageOfSet = Math.min(
+      startPageOfSet + PAGINATION_BUTTONS_TO_SHOW - 1,
+      totalPages
+    )
+
+    // Go to the last page of the previous set
+    currentPage = endPageOfSet
     renderItems()
     setupPagination()
   }
@@ -121,16 +151,6 @@ function goToPage(page) {
 }
 
 async function fetchItems() {
-  // Simulating API response
-  // return Array.from({ length: 100 }, (_, index) => ({
-  //   id: index + 1,
-  //   name: `Item Name ${index + 1}`,
-  //   description: 'Description preview...',
-  //   condition: 'New/Unused',
-  //   category: 'Category',
-  //   thumbnail: '/assets/images/default-image.png',
-  //   user: '/assets/images/profile-anime.png'
-  // }))
   const response = await fetch(
     '/assets/scripts/auth/pages/items/dummydata.json'
   )
@@ -141,8 +161,10 @@ async function fetchItems() {
 async function initItemsList() {
   try {
     items = await fetchItems()
+    filteredItems = [] // Start with empty filtered items
     renderItems()
     setupPagination()
+    updateStatusCount()
   } catch (error) {
     console.error('Error initializing items:', error)
   }
@@ -150,23 +172,110 @@ async function initItemsList() {
 
 function setupEventListeners() {
   if (prevButton && nextButton) {
-    // Remove existing listeners if any
-    prevButton.removeEventListener('click', previousPage)
-    nextButton.removeEventListener('click', nextPage)
-
-    // Add new listeners
     prevButton.addEventListener('click', previousPage)
     nextButton.addEventListener('click', nextPage)
   } else {
     console.error('Navigation buttons not found in the DOM')
   }
+
+  // Setup filter button click
+  const filterButton = document.getElementById('btn-apply-filter')
+  if (filterButton) {
+    filterButton.addEventListener('click', () => {
+      applyFilters()
+    })
+  }
 }
+
+// Filter related functions
+function applyFilters() {
+  console.log('Applying filters:', window.selectedFilters)
+
+  // Apply filters to items
+  filteredItems = items.filter((item) => {
+    const categoryMatch =
+      window.selectedFilters.category.length === 0 ||
+      window.selectedFilters.category.includes(item.category)
+
+    const conditionMatch =
+      window.selectedFilters.condition.length === 0 ||
+      window.selectedFilters.condition.includes(item.condition)
+
+    const availabilityMatch =
+      window.selectedFilters.availability.length === 0 ||
+      window.selectedFilters.availability.includes(item.availability)
+
+    return categoryMatch && conditionMatch && availabilityMatch
+  })
+
+  console.log('Filtered items count:', filteredItems.length)
+
+  // Reset pagination to first page and first set
+  currentPage = 1
+  currentSet = 1
+
+  // Update UI
+  renderItems()
+  setupPagination()
+  updateStatusCount()
+}
+
+function removeFilter(filterName) {
+  for (let key in window.selectedFilters) {
+    window.selectedFilters[key] = window.selectedFilters[key].filter(
+      (f) => f !== filterName
+    )
+  }
+  saveFiltersToStorage()
+  updateSidebarCheckboxes()
+  applyFilters()
+}
+
+function clearAllFilters() {
+  window.selectedFilters = { category: [], condition: [], availability: [] }
+  saveFiltersToStorage()
+  updateSidebarCheckboxes()
+  applyFilters()
+}
+
+// Update status count in UI
+function updateStatusCount() {
+  const statusCountElement = document.querySelector('.status-count')
+
+  if (statusCountElement) {
+    const count = filteredItems.length > 0 ? filteredItems.length : items.length
+    statusCountElement.innerHTML = `<strong>${count.toLocaleString()}</strong> results found`
+  }
+}
+
+// Save/Load filters
+function saveFiltersToStorage() {
+  localStorage.setItem(
+    'selectedFilters',
+    JSON.stringify(window.selectedFilters)
+  )
+}
+
+function loadFiltersFromStorage() {
+  const stored = localStorage.getItem('selectedFilters')
+  if (stored) {
+    window.selectedFilters = JSON.parse(stored)
+  }
+}
+
+// Export functions for sidebar.js to use
+window.applyFilters = applyFilters
+window.removeFilter = removeFilter
+window.clearAllFilters = clearAllFilters
 
 async function initializeApp() {
   try {
     initializeDOMElements()
-    setupEventListeners()
+    loadFiltersFromStorage()
     await initItemsList()
+    setupEventListeners()
+    // Apply initial filters after items are loaded
+    applyFilters()
   } catch (error) {
     console.error('Error initializing app:', error)
   }
