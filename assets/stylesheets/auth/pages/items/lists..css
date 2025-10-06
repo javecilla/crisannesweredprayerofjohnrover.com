@@ -326,6 +326,9 @@ span.badge {
   padding: 0.75rem 1.2rem;
   min-width: 40px;
 }
+.lists .pagination .page-item button:disabled {
+  cursor: not-allowed;
+}
 
 .lists .pagination .page-item button.active {
   background: var(--color-green);

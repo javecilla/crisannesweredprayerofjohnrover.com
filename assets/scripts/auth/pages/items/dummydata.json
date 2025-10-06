@@ -1,0 +1,504 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Wireless Earbuds",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Electronics & Gadgets",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Compact earbuds with noise cancellation and long battery life.",
+      "availability": "Available"
+    },
+    {
+      "id": 2,
+      "name": "DIY Tool Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Tools & DIY",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Comprehensive toolkit for home repair and creative projects.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 3,
+      "name": "Classic Denim Jacket",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Clothing & Accessories",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Timeless blue denim jacket perfect for casual wear.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 4,
+      "name": "Children’s Storybook Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Books & Stationery",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Collection of illustrated bedtime stories for kids.",
+      "availability": "Available"
+    },
+    {
+      "id": 5,
+      "name": "Building Block Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Toys & Games",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Creative block set that enhances problem-solving and creativity.",
+      "availability": "Available"
+    },
+    {
+      "id": 6,
+      "name": "Ceramic Vase",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Elegant white vase ideal for minimalist home decor.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 7,
+      "name": "Pet Grooming Kit",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Pet Supplies",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Complete grooming set for cats and dogs.",
+      "availability": "Available"
+    },
+    {
+      "id": 8,
+      "name": "Math Notebook Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "School Supplies",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Pack of grid notebooks perfect for math and technical notes.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 9,
+      "name": "Essential Oil Diffuser",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Hygiene & Personal Care",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Aromatherapy diffuser for a calming and fresh ambiance.",
+      "availability": "Available"
+    },
+    {
+      "id": 10,
+      "name": "Acrylic Paint Kit",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Hobbies & Crafts",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Full set of vibrant acrylic paints for creative projects.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 11,
+      "name": "Kitchen Knife Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Kitchen & Pantry",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Premium stainless steel knife set with ergonomic handles.",
+      "availability": "Available"
+    },
+    {
+      "id": 12,
+      "name": "Toddler Learning Toys",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Baby & Kids",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Colorful toys designed to support early childhood learning.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 13,
+      "name": "Bluetooth Speaker",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Electronics & Gadgets",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "For Upcycling/Repair",
+      "description": "Portable speaker with minor battery issues.",
+      "availability": "Available"
+    },
+    {
+      "id": 14,
+      "name": "Garden Tool Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Tools & DIY",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Includes trowel, pruner, and gloves for home gardening.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 15,
+      "name": "Winter Scarf",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Clothing & Accessories",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Soft knitted scarf to keep you warm during the cold season.",
+      "availability": "Available"
+    },
+    {
+      "id": 16,
+      "name": "Notebook Planner",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Books & Stationery",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Stylish planner for organizing schedules and notes.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 17,
+      "name": "Board Game Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Toys & Games",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Family board game with complete pieces and box.",
+      "availability": "Available"
+    },
+    {
+      "id": 18,
+      "name": "Decorative Wall Clock",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "For Upcycling/Repair",
+      "description": "Stylish wall clock—needs battery replacement.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 19,
+      "name": "Pet Feeding Bowl",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Pet Supplies",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Non-slip stainless steel pet food bowl.",
+      "availability": "Available"
+    },
+    {
+      "id": 20,
+      "name": "School Backpack",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "School Supplies",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Spacious and durable backpack for daily school use.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 21,
+      "name": "Hair Dryer",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Hygiene & Personal Care",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Compact and powerful hair dryer for quick styling.",
+      "availability": "Available"
+    },
+    {
+      "id": 22,
+      "name": "Sketching Pencil Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Hobbies & Crafts",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Professional-grade graphite pencils for artists.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 23,
+      "name": "Stainless Steel Pan",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Kitchen & Pantry",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Non-stick pan suitable for everyday cooking.",
+      "availability": "Available"
+    },
+    {
+      "id": 24,
+      "name": "Baby Stroller",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Baby & Kids",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "For Upcycling/Repair",
+      "description": "Lightweight stroller with a loose wheel joint.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 25,
+      "name": "Smartwatch",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Electronics & Gadgets",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Fitness-focused smartwatch with heart rate tracking.",
+      "availability": "Available"
+    },
+    {
+      "id": 26,
+      "name": "Wood Carving Kit",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Tools & DIY",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Starter kit for hobbyists learning wood carving.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 27,
+      "name": "Leather Wallet",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Clothing & Accessories",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Premium leather wallet with multiple compartments.",
+      "availability": "Available"
+    },
+    {
+      "id": 28,
+      "name": "Novel Collection",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Books & Stationery",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Assorted fiction novels from popular authors.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 29,
+      "name": "Stuffed Animal Plush",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Toys & Games",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Soft teddy bear perfect for kids and collectors.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 30,
+      "name": "Aroma Candle Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Scented candles ideal for relaxation and decor.",
+      "availability": "Available"
+    },
+    {
+      "id": 31,
+      "name": "Canvas Tote Bag",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Clothing & Accessories",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Eco-friendly tote bag great for shopping or travel.",
+      "availability": "Available"
+    },
+    {
+      "id": 32,
+      "name": "Children’s Coloring Book",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Books & Stationery",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Fun and educational coloring book for kids.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 33,
+      "name": "Toy Train Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Toys & Games",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Battery-powered train set with tracks and accessories.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 34,
+      "name": "Throw Pillow Covers",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Soft and stylish pillow covers for home decor.",
+      "availability": "Available"
+    },
+    {
+      "id": 35,
+      "name": "Screwdriver Kit",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Tools & DIY",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "For Upcycling/Repair",
+      "description": "Basic screwdriver kit with replaceable heads.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 36,
+      "name": "Wireless Mouse",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Electronics & Gadgets",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Ergonomic mouse designed for productivity and comfort.",
+      "availability": "Available"
+    },
+    {
+      "id": 37,
+      "name": "Baby Feeding Bottle Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Baby & Kids",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Set of BPA-free baby bottles with anti-colic nipples.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 38,
+      "name": "Highlighter Pack",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "School Supplies",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Bright-colored highlighters for studying and journaling.",
+      "availability": "Available"
+    },
+    {
+      "id": 39,
+      "name": "Bath Towel Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Hygiene & Personal Care",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Soft and absorbent cotton towels for everyday use.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 40,
+      "name": "Resin Craft Kit",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Hobbies & Crafts",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Starter resin art kit with molds and pigments.",
+      "availability": "Available"
+    },
+    {
+      "id": 41,
+      "name": "Blender",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Kitchen & Pantry",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "For Upcycling/Repair",
+      "description": "High-speed blender, needs blade tightening.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 42,
+      "name": "Pet Leash",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Pet Supplies",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Durable nylon leash with reflective stitching.",
+      "availability": "Available"
+    },
+    {
+      "id": 43,
+      "name": "Portable Fan",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Electronics & Gadgets",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Rechargeable mini fan with adjustable speed settings.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 44,
+      "name": "Crochet Yarn Bundle",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Hobbies & Crafts",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Assorted colors of soft yarn for crochet projects.",
+      "availability": "Available"
+    },
+    {
+      "id": 45,
+      "name": "Wireless Keyboard",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Electronics & Gadgets",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Slim wireless keyboard perfect for office setup.",
+      "availability": "Reserved"
+    },
+    {
+      "id": 46,
+      "name": "Apron Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Kitchen & Pantry",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Cooking apron set with matching oven mitts.",
+      "availability": "Available"
+    },
+    {
+      "id": 47,
+      "name": "Safety Goggles",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Tools & DIY",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Protective goggles for construction or workshop use.",
+      "availability": "Available"
+    },
+    {
+      "id": 48,
+      "name": "Hand Sanitizer Pack",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Hygiene & Personal Care",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Pocket-sized sanitizers for on-the-go hygiene.",
+      "availability": "Already Requested"
+    },
+    {
+      "id": 49,
+      "name": "Pet Toy Ball",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Pet Supplies",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "Gently Used",
+      "description": "Durable chew toy ball for active pets.",
+      "availability": "Available"
+    },
+    {
+      "id": 50,
+      "name": "Photo Frame Set",
+      "thumbnail": "/assets/images/default-image.png",
+      "category": "Home & Living",
+      "user": "/assets/images/profile-anime.png",
+      "condition": "New/Unused",
+      "description": "Modern frame set perfect for family photos or wall art.",
+      "availability": "Reserved"
+    }
+  ]
+}
