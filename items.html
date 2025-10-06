@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" type="image/png" href="/assets/meta/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/meta/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/meta/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/meta/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="sitemap" type="application/xml" href="/assets/sitemap.xml" />
+
+    <!-- Primary Meta Tags -->
+    <title>Items - Kalat Mo Yaman Ko</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="title" content="Kalat Mo Yaman Ko" />
+    <meta
+      name="description"
+      content="Kalat Mo, Yaman Ko is a community-driven platform that helps you give away
+pre-loved items to people who need them. Promote the 3Rs—Reduce, Reuse,
+and Recycle—while building a circular economy in your own neighborhood."
+    />
+    <meta
+      name="abstract"
+      content="Join a growing movement where your unused items find new purpose.
+Share, receive, and make a difference through reuse, reduce, and recycle."
+    />
+    <meta
+      name="keywords"
+      content="Kalat Mo Yaman Ko, Bulacan State University"
+    />
+    <meta name="copyright" content="Kalat Mo Yaman Ko" />
+
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      name="bingbot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta
+      name="google-site-verification"
+      content="TEST_yn3h_XIX46hpOTXbkr1gnJnX5jjg1Lesyv_xOJHbR9g"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <!-- Twitter -->
+    <!-- Additional SEO Tags -->
+    <!-- Mobile App Meta Tags -->
+    <!-- Geo Tags (Philippines) -->
+    <!-- Schema.org structured data -->
+    <!-- Google Tag Manager -->
+
+    <!-- libs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/libs/bootstrap/bootstrap@5.3.2/css/bootstrap.min.css"
+      loading="eager"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/libs/fontawesome/css/all.min.css"
+    />
+
+    <!-- layout css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/navbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/footer.css"
+    />
+
+    <!-- custom css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/auth/pages/items/lists..css"
+    />
+  </head>
+  <body>
+    <header class="sticky-top bg-white shadow-sm">
+      <div class="container-fluid py-2">
+        <div class="d-flex justify-content-end">
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            class="menu-content offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title invisible" id="offcanvasExampleLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="quick-links">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="community.html">Community</a>
+                </li>
+                <li>
+                  <a href="terms-and-conditions.html">Terms & Condition</a>
+                </li>
+                <li>
+                  <a href="login.html">Login</a>
+                </li>
+                <li>
+                  <a href="register.html">Register</a>
+                </li>
+                <li class="active">
+                  <a href="items.html">Items</a>
+                </li>
+                <li>
+                  <a href="post-item.html">Post an Item</a>
+                </li>
+                <li>
+                  <a href="specific-item.html">Specific Item</a>
+                </li>
+                <li>
+                  <a href="discussions.html">Discussions</a>
+                </li>
+                <li>
+                  <a href="specific-discussion.html">Specific Discussion</a>
+                </li>
+                <li>
+                  <a href="post-discussion.html">Post a Discussion</a>
+                </li>
+                <li>
+                  <a href="post-photo.html">Post a Photo</a>
+                </li>
+                <li>
+                  <a href="specific-resource.html">Specific Resource</a>
+                </li>
+                <li>
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a href="messaging.html">Messaging</a>
+                </li>
+                <li>
+                  <a href="profile.html">Profile</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/app-logo-name1.png" alt="logo-name" />
+        </a>
+
+        <div id="client-side" class="d-none">
+          <!-- Center Links - Hidden on mobile -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms-and-conditions.html"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right-aligned buttons - Always visible -->
+          <div class="navbar-nav flex-row gap-2">
+            <a
+              href="register.html"
+              class="btn btn-outline-secondary nav-btn nav-btn-register"
+              >Register</a
+            >
+            <a href="login.html" class="btn btn-secondary nav-btn nav-btn-login"
+              >Login</a
+            >
+          </div>
+        </div>
+
+        <div id="auth-side">
+          <!-- centered search input -->
+          <div class="search-container">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+
+          <!-- right navigations links -->
+          <div class="actions-container">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="items.html"
+                  >Items</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+            </ul>
+            <img src="/assets/images/profile-anime.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="lists">
+        <div class="container">
+          <div class="header">
+            <div class="left-content">
+              <h3>Kalat Mo, Yaman Ko</h3>
+              <button type="button" class="btn btn-outline-success">
+                <img
+                  src="/assets/images/filter-icon.png"
+                  width="20"
+                  alt="icon"
+                />
+                Filter
+              </button>
+              <!-- active filter comes what filters is generated base on the sidebar filter -->
+              <div class="active-filters">
+                <span><i class="fa-solid fa-x"></i> Clear Filters</span>
+                <span><i class="fa-solid fa-x"></i> Home & Living</span>
+                <span><i class="fa-solid fa-x"></i> New/Unused</span>
+              </div>
+            </div>
+            <div class="right-content">
+              <a href="#" class="btn btn-success">
+                <i class="fa-solid fa-plus"></i> &nbsp;Post an Item
+              </a>
+              <div>
+                <span>Sort by:</span>
+                <select>
+                  <option value="Trending" selected>Trending</option>
+                </select>
+              </div>
+              <span class="status-count">
+                <strong>5,162,004</strong> results find for “home essentials”
+              </span>
+            </div>
+          </div>
+          <aside>
+            <div class="category">
+              <h5>Category</h5>
+              <ul>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Clothing & Accessories
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Books & Stationery
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Toys & Games
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" checked />
+                      Home & Living
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Tools & DIY
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Electronics & Gadgets
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Baby & Kids
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      School Supplies
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Hygiene & Personal Care
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Pet Supplies
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Hobbies & Crafts
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Kitchen & Pantry
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <hr />
+            <div class="condition">
+              <h5>Condition</h5>
+              <ul>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" checked />
+                      New/Unused
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Gently Used
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      For Upcycling/Repair
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <hr />
+            <div class="availability">
+              <h5>Availability</h5>
+              <ul>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Available
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Already Requested
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <div class="checkbox-text">
+                      <input type="checkbox" />
+                      Reserved
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <div class="lists-content">
+            <div class="wrapper">
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-item.html">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Item Name</h6>
+                      <span>Condition: New/Unused </span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side">
+                      <img
+                        src="/assets/images/hand-arrow-down-icon.png"
+                        alt="img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="pagination">
+              <button type="button">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <div class="page-item">
+                <button type="button" class="active">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+              </div>
+              <button type="button">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div class="container">
+          <div class="left-content">
+            <img src="/assets/images/app-logo-name2-removebg.png" alt="logo" />
+            <h6>Have questions, feedback, or suggestions?</h6>
+            <p>
+              Whether you're posting an item, requesting something, or simply
+              exploring the community, we're here to help you make the most out
+              of sharing and sustainability. Reach out to our team anytime!
+            </p>
+          </div>
+          <div class="right-content">
+            <h5>CONTACT</h5>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-location-dot"></i> Bulacan
+                  State University</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-envelope"></i>
+                  kmym@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-phone"></i> Need help? Call
+                  us 09917445294</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2025 Kalat Mo, Yaman Ko. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <!-- libs scripts -->
+    <script
+      type="application/javascript"
+      src="/assets/libs/bootstrap/bootstrap@5.3.2/js/bootstrap.min.js"
+      loading="eager"
+    ></script>
+    <script
+      type="application/javascript"
+      src="/assets/libs/fontawesome/js/all.min.js"
+    ></script>
+
+    <!-- custom scripts -->
+  </body>
+</html>
