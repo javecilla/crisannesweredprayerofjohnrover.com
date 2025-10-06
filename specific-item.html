@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" type="image/png" href="/assets/meta/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/meta/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/meta/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/meta/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="sitemap" type="application/xml" href="/assets/sitemap.xml" />
+
+    <!-- Primary Meta Tags -->
+    <title>Kalat Mo Yaman Ko</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="title" content="Kalat Mo Yaman Ko" />
+    <meta
+      name="description"
+      content="Kalat Mo, Yaman Ko is a community-driven platform that helps you give away
+pre-loved items to people who need them. Promote the 3Rs—Reduce, Reuse,
+and Recycle—while building a circular economy in your own neighborhood."
+    />
+    <meta
+      name="abstract"
+      content="Join a growing movement where your unused items find new purpose.
+Share, receive, and make a difference through reuse, reduce, and recycle."
+    />
+    <meta
+      name="keywords"
+      content="Kalat Mo Yaman Ko, Bulacan State University"
+    />
+    <meta name="copyright" content="Kalat Mo Yaman Ko" />
+
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      name="bingbot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta
+      name="google-site-verification"
+      content="TEST_yn3h_XIX46hpOTXbkr1gnJnX5jjg1Lesyv_xOJHbR9g"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <!-- Twitter -->
+    <!-- Additional SEO Tags -->
+    <!-- Mobile App Meta Tags -->
+    <!-- Geo Tags (Philippines) -->
+    <!-- Schema.org structured data -->
+    <!-- Google Tag Manager -->
+
+    <!-- libs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/libs/bootstrap/bootstrap@5.3.2/css/bootstrap.min.css"
+      loading="eager"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/libs/fontawesome/css/all.min.css"
+    />
+
+    <!-- layout css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/navbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/footer.css"
+    />
+
+    <!-- custom css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/auth/pages/specifc-item/list.css"
+    />
+  </head>
+  <body>
+    <header class="sticky-top bg-white shadow-sm">
+      <div class="container-fluid py-2">
+        <div class="d-flex justify-content-end">
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            class="menu-content offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title invisible" id="offcanvasExampleLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="quick-links">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="community.html">Community</a>
+                </li>
+                <li>
+                  <a href="terms-and-conditions.html">Terms & Condition</a>
+                </li>
+                <li>
+                  <a href="login.html">Login</a>
+                </li>
+                <li>
+                  <a href="register.html">Register</a>
+                </li>
+                <li>
+                  <a href="items.html">Items</a>
+                </li>
+                <li>
+                  <a href="post-item.html">Post an Item</a>
+                </li>
+                <li class="active">
+                  <a href="specific-item.html">Specific Item</a>
+                </li>
+                <li>
+                  <a href="discussions.html">Discussions</a>
+                </li>
+                <li>
+                  <a href="specific-discussion.html">Specific Discussion</a>
+                </li>
+                <li>
+                  <a href="post-discussion.html">Post a Discussion</a>
+                </li>
+                <li>
+                  <a href="post-photo.html">Post a Photo</a>
+                </li>
+                <li>
+                  <a href="specific-resource.html">Specific Resource</a>
+                </li>
+                <li>
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a href="messaging.html">Messaging</a>
+                </li>
+                <li>
+                  <a href="profile.html">Profile</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/app-logo-name1.png" alt="logo-name" />
+        </a>
+
+        <div id="client-side" class="d-none">
+          <!-- Center Links - Hidden on mobile -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms-and-conditions.html"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right-aligned buttons - Always visible -->
+          <div class="navbar-nav flex-row gap-2">
+            <a
+              href="register.html"
+              class="btn btn-outline-secondary nav-btn nav-btn-register"
+              >Register</a
+            >
+            <a href="login.html" class="btn btn-secondary nav-btn nav-btn-login"
+              >Login</a
+            >
+          </div>
+        </div>
+
+        <div id="auth-side">
+          <!-- centered search input -->
+          <div class="search-container">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+
+          <!-- right navigations links -->
+          <div class="actions-container">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="items.html">Items</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+            </ul>
+            <img src="/assets/images/profile-anime.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="list">
+        <div class="container">
+          <div class="summary">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Items</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Solid Wooden Table
+                </li>
+              </ol>
+            </nav>
+            <div class="content">
+              <div class="left-side">
+                <div class="card active-thumbnail">
+                  <span class="badge text-bg-warning">Category</span>
+
+                  <img
+                    src="/assets/images/wooden-table.png"
+                    class="at-big"
+                    alt="img"
+                  />
+                  <div class="thumbnails">
+                    <div class="card active">
+                      <img src="/assets/images/wooden-table-1.png" alt="img" />
+                    </div>
+                    <div class="card">
+                      <img src="/assets/images/wooden-table-2.png" alt="img" />
+                    </div>
+                    <div class="card">
+                      <img src="/assets/images/wooden-table-3.png" alt="img" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-side">
+                <h2>Solid Wooden Table</h2>
+                <hr />
+                <p>
+                  A sturdy, pre-loved wooden table in good condition. Perfect
+                  for dining, study, or home office use. Free for pickup in
+                  Pulilan.
+                </p>
+                <div class="actions">
+                  <button type="button" class="btn btn-warning add-watchlist">
+                    <i class="fa-solid fa-heart"></i> Add to Watchlist
+                  </button>
+                  <button type="button" class="btn btn-success request">
+                    <img
+                      src="/assets/images/hand-offer-arrowdown.png"
+                      width="25"
+                      alt="icon"
+                    />
+                    Request
+                  </button>
+                </div>
+                <ul>
+                  <li><strong>Posted by:</strong> Mary Allyson Caba</li>
+                  <li><strong>Date Posted: </strong> August 5, 2025</li>
+                  <li>
+                    <strong>Location:</strong> Barangay Tabon, Pulilan, Bulacan
+                  </li>
+                  <li><strong>Category:</strong> Home & Living</li>
+                  <li><strong>Condition:</strong> Gently Used</li>
+                  <li>
+                    <strong>Status:</strong>
+                    <span class="status-item">Available</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="details">
+            <div class="navtab-container">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="description-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#description"
+                    type="button"
+                    role="tab"
+                    aria-controls="description"
+                    aria-selected="true"
+                  >
+                    Description
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="comments-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#comments"
+                    type="button"
+                    role="tab"
+                    aria-controls="comments"
+                    aria-selected="false"
+                  >
+                    Comments
+                  </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="description"
+                  role="tabpanel"
+                  aria-labelledby="description-tab"
+                  tabindex="0"
+                >
+                  <p>
+                    This solid mahogany wooden table has served us well and is
+                    ready for a new home! It's rectangular, spacious, and ideal
+                    for various uses—from family meals to work-from-home setups.
+                    Though it has minor surface scratches from regular use, it's
+                    still very stable and reliable. The natural wood finish adds
+                    a rustic charm to any space. Offered for free—just bring
+                    your own transport for pickup. Let's give it a second life!
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="comments"
+                  role="tabpanel"
+                  aria-labelledby="comments-tab"
+                  tabindex="0"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Eos consequatur earum recusandae corrupti, labore mollitia
+                    consectetur dicta dolorem nobis, error facere doloremque
+                    culpa tenetur molestiae praesentium a voluptates explicabo
+                    esse.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="related-items">
+            <h3>Related Items</h3>
+            <div class="items">
+              <div class="card">
+                <!-- float above thumbnail -->
+                <div class="header-content">
+                  <button type="button">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+                <img
+                  src="/assets/images/related-items1.png"
+                  class="img-items"
+                  alt="img"
+                />
+                <div class="body-content">
+                  <h6>Item Name</h6>
+                  <span>Condition: Gently Used</span>
+                  <p>Description preview...</p>
+                </div>
+                <div class="footer-content">
+                  <button type="button" class="btn btn-success">
+                    <img
+                      src="/assets/images/hand-offer-arrowdown.png"
+                      width="25"
+                      alt="icon"
+                    />
+                    Request
+                  </button>
+                </div>
+              </div>
+
+              <div class="card">
+                <!-- float above thumbnail -->
+                <div class="header-content">
+                  <button type="button">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+                <img
+                  src="/assets/images/related-items2.png"
+                  class="img-items"
+                  alt="img"
+                />
+                <div class="body-content">
+                  <h6>Item Name</h6>
+                  <span>Condition: Gently Used</span>
+                  <p>Description preview...</p>
+                </div>
+                <div class="footer-content">
+                  <button type="button" class="btn btn-success">
+                    <img
+                      src="/assets/images/hand-offer-arrowdown.png"
+                      width="25"
+                      alt="icon"
+                    />
+                    Request
+                  </button>
+                </div>
+              </div>
+
+              <div class="card">
+                <!-- float above thumbnail -->
+                <div class="header-content">
+                  <button type="button">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+                <img
+                  src="/assets/images/related-items3.png"
+                  class="img-items"
+                  alt="img"
+                />
+                <div class="body-content">
+                  <h6>Item Name</h6>
+                  <span>Condition: Gently Used</span>
+                  <p>Description preview...</p>
+                </div>
+                <div class="footer-content">
+                  <button type="button" class="btn btn-success">
+                    <img
+                      src="/assets/images/hand-offer-arrowdown.png"
+                      width="25"
+                      alt="icon"
+                    />
+                    Request
+                  </button>
+                </div>
+              </div>
+
+              <div class="card">
+                <!-- float above thumbnail -->
+                <div class="header-content">
+                  <button type="button">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+                <img
+                  src="/assets/images/related-items4.png"
+                  class="img-items"
+                  alt="img"
+                />
+                <div class="body-content">
+                  <h6>Item Name</h6>
+                  <span>Condition: Gently Used</span>
+                  <p>Description preview...</p>
+                </div>
+                <div class="footer-content">
+                  <button type="button" class="btn btn-success">
+                    <img
+                      src="/assets/images/hand-offer-arrowdown.png"
+                      width="25"
+                      alt="icon"
+                    />
+                    Request
+                  </button>
+                </div>
+              </div>
+
+              <div class="card">
+                <!-- float above thumbnail -->
+                <div class="header-content">
+                  <button type="button">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+                <img
+                  src="/assets/images/related-items5.png"
+                  class="img-items"
+                  alt="img"
+                />
+                <div class="body-content">
+                  <h6>Item Name</h6>
+                  <span>Condition: Gently Used</span>
+                  <p>Description preview...</p>
+                </div>
+                <div class="footer-content">
+                  <button type="button" class="btn btn-success">
+                    <img
+                      src="/assets/images/hand-offer-arrowdown.png"
+                      width="25"
+                      alt="icon"
+                    />
+                    Request
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div class="container">
+          <div class="left-content">
+            <img src="/assets/images/app-logo-name2-removebg.png" alt="logo" />
+            <h6>Have questions, feedback, or suggestions?</h6>
+            <p>
+              Whether you're posting an item, requesting something, or simply
+              exploring the community, we're here to help you make the most out
+              of sharing and sustainability. Reach out to our team anytime!
+            </p>
+          </div>
+          <div class="right-content">
+            <h5>CONTACT</h5>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-location-dot"></i> Bulacan
+                  State University</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-envelope"></i>
+                  kmym@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-phone"></i> Need help? Call
+                  us 09917445294</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2025 Kalat Mo, Yaman Ko. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <!-- libs scripts -->
+    <script
+      type="application/javascript"
+      src="/assets/libs/bootstrap/bootstrap@5.3.2/js/bootstrap.min.js"
+      loading="eager"
+    ></script>
+    <script
+      type="application/javascript"
+      src="/assets/libs/fontawesome/js/all.min.js"
+    ></script>
+
+    <!-- custom scripts -->
+    <!-- <script
+      type="application/javascript"
+      src="/assets/scripts/auth/pages/specific-item/navtab.js"
+    ></script> -->
+  </body>
+</html>

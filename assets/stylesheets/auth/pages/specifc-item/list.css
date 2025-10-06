@@ -1,0 +1,672 @@
+/* Item Detail Page Styles */
+.list .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Breadcrumb */
+.list .summary nav {
+  margin-bottom: 20px;
+}
+
+.list .breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.list .breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+  color: #6c757d;
+}
+
+.list .breadcrumb-item a {
+  color: #198754;
+  text-decoration: none;
+}
+
+.list .breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.list .breadcrumb-item.active {
+  color: #000;
+  font-weight: 500;
+}
+
+/* Summary Content */
+.list .summary .content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.list .left-side {
+  position: relative;
+}
+
+.list .left-side .active-thumbnail {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.list .left-side .active-thumbnail .badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--color-yellow) !important;
+  color: var(--color-white) !important;
+  border-radius: 20px;
+  padding: 0.4rem 1.4rem;
+}
+
+.list .left-side .active-thumbnail .at-big {
+  width: 320px;
+  height: 320px;
+  margin-top: 4rem;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 15px;
+}
+
+.thumbnails .card {
+  padding: 0.75rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnails .card.active {
+  border: 1px solid var(--color-dirty-white);
+}
+
+.thumbnails .card img {
+  width: 60px !important;
+  height: 50px !important;
+}
+
+.list .right-side h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.list .right-side hr {
+  color: #a4a8ab;
+  margin: 15px 0 20px 0;
+}
+
+.list .right-side > p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-black);
+  margin-bottom: 25px;
+}
+
+/* Action Buttons */
+.list .actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.list .actions button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s;
+  border: none;
+}
+
+.list .actions button.add-watchlist {
+  background: var(--color-yellow);
+  color: var(--color-white);
+}
+
+.list .actions button.request {
+  background: var(--color-green);
+  color: var(--color-white);
+}
+
+/* Item Details List */
+.list .right-side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list .right-side ul li {
+  font-size: 1.2rem;
+  color: var(--color-semi-dark);
+}
+
+.status-item {
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+/* Details Section - Nav Tabs */
+.list .details {
+  margin: 50px 0;
+}
+
+.list .navtab-container {
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.list .nav-tabs {
+  background-color: none;
+  border-bottom: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.list .nav-tabs .nav-link {
+  border: none;
+  color: var(--color-semi-dark);
+  font-weight: 600;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.list .nav-tabs .nav-link:hover {
+  color: var(--color-green);
+  background-color: transparent;
+  font-weight: bolder;
+  opacity: 1;
+}
+
+.list .nav-tabs .nav-link.active {
+  color: var(--color-dark);
+  background-color: transparent;
+  border-bottom-color: var(--color-dark);
+  opacity: 1;
+}
+
+.list .tab-pane p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+/* Related Items Section */
+.list .related-items {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.list .related-items h3 {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+}
+
+.list .related-items .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.items .card {
+  border: 1px solid #dee2e6;
+  border-radius: 1px;
+  overflow: hidden;
+  transition: all 0.3s;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list .related-items .card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Card Header - Watchlist Button */
+.list .related-items .header-content {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.list .related-items .header-content button {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--color-yellow);
+}
+
+.list .related-items .card .img-items {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-top: 5rem;
+}
+
+.list .related-items .body-content {
+  padding: 15px;
+}
+
+.list .related-items .body-content h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.list .related-items .body-content span {
+  font-size: 13px;
+  color: #6c757d;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.list .related-items .body-content p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Card Footer */
+.list .related-items .footer-content {
+  padding: 0 15px 15px 15px;
+}
+
+.list .related-items .footer-content .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.list .related-items .footer-content .btn-success {
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.list .related-items .footer-content .btn-success:hover {
+  background-color: #157347;
+  border-color: #157347;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(25, 135, 84, 0.3);
+}
+
+/* ========================================
+   RESPONSIVE MEDIA QUERIES
+   ======================================== */
+
+/* Large Tablets and Small Desktops (992px - 1199px) */
+@media (max-width: 1199px) {
+  .list .container {
+    padding: 15px;
+  }
+
+  .list .summary .content {
+    gap: 30px;
+  }
+
+  .list .left-side .active-thumbnail .at-big {
+    width: 280px;
+    height: 280px;
+  }
+
+  .list .right-side h2 {
+    font-size: 2.2rem;
+  }
+
+  .list .related-items .items {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  .list .container {
+    padding: 15px;
+  }
+
+  /* Stack the layout vertically on tablets */
+  .list .summary .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .list .left-side .active-thumbnail .at-big {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .list .right-side h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .list .right-side > p {
+    font-size: 1rem;
+  }
+
+  .list .right-side ul li {
+    font-size: 1rem;
+  }
+
+  .list .actions button {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  .list .details {
+    margin: 40px 0;
+  }
+
+  .list .nav-tabs .nav-link {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .list .tab-pane p {
+    font-size: 1rem;
+  }
+
+  .list .related-items .items {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+
+  .list .related-items h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Landscape and Small Tablets (576px - 767px) */
+@media (max-width: 767px) {
+  .list .container {
+    padding: 10px;
+  }
+
+  .list .breadcrumb {
+    font-size: 12px;
+  }
+
+  .list .summary .content {
+    gap: 20px;
+  }
+
+  .list .left-side .active-thumbnail {
+    padding: 0.5rem;
+  }
+
+  .list .left-side .active-thumbnail .at-big {
+    max-width: 320px;
+    margin-top: 1.5rem;
+  }
+
+  .list .left-side .active-thumbnail .badge {
+    font-size: 11px;
+    padding: 0.3rem 1rem;
+    top: 10px;
+    left: 10px;
+  }
+
+  .thumbnails {
+    gap: 0.5rem;
+    margin-top: 10px;
+  }
+
+  .thumbnails .card {
+    padding: 0.5rem;
+  }
+
+  .thumbnails .card img {
+    width: 50px !important;
+    height: 40px !important;
+  }
+
+  .list .right-side h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+  }
+
+  .list .right-side > p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .list .actions {
+    gap: 10px;
+  }
+
+  .list .actions button {
+    font-size: 0.95rem;
+    padding: 10px 15px;
+    flex: 1;
+  }
+
+  .list .right-side ul li {
+    font-size: 0.95rem;
+    padding: 8px 0;
+  }
+
+  .list .details {
+    margin: 30px 0;
+  }
+
+  .list .nav-tabs .nav-link {
+    font-size: 0.95rem;
+    padding: 10px 15px;
+  }
+
+  .list .tab-pane p {
+    font-size: 0.95rem;
+  }
+
+  .list .related-items {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .list .related-items h3 {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .list .related-items .items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .list .related-items .card .img-items {
+    width: 100px;
+    height: 100px;
+    margin-top: 4rem;
+  }
+
+  .list .related-items .body-content {
+    padding: 12px;
+  }
+
+  .list .related-items .body-content h6 {
+    font-size: 14px;
+  }
+
+  .list .related-items .body-content span,
+  .list .related-items .body-content p {
+    font-size: 12px;
+  }
+
+  .list .related-items .footer-content {
+    padding: 0 12px 12px 12px;
+  }
+
+  .list .related-items .footer-content .btn {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+/* Mobile Portrait (320px - 575px) */
+@media (max-width: 575px) {
+  .list .container {
+    padding: 10px;
+  }
+
+  .list .summary nav {
+    margin-bottom: 15px;
+  }
+
+  .list .breadcrumb {
+    font-size: 11px;
+  }
+
+  .list .left-side .active-thumbnail .at-big {
+    max-width: 280px;
+    margin-top: 1rem;
+  }
+
+  .thumbnails {
+    gap: 0.4rem;
+  }
+
+  .thumbnails .card img {
+    width: 45px !important;
+    height: 35px !important;
+  }
+
+  .list .right-side h2 {
+    font-size: 1.5rem;
+  }
+
+  .list .right-side > p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .list .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .list .actions button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .list .right-side ul li {
+    font-size: 0.9rem;
+  }
+
+  .list .nav-tabs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .list .nav-tabs .nav-link {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .list .tab-pane p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .list .related-items .items {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .list .related-items .card .img-items {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Extra Small Mobile (max 374px) */
+@media (max-width: 374px) {
+  .list .container {
+    padding: 8px;
+  }
+
+  .list .left-side .active-thumbnail .at-big {
+    max-width: 250px;
+  }
+
+  .list .right-side h2 {
+    font-size: 1.3rem;
+  }
+
+  .list .actions button {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .list .nav-tabs .nav-link {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .thumbnails .card img {
+    width: 40px !important;
+    height: 32px !important;
+  }
+
+  .list .related-items .header-content button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .list .related-items .card .img-items {
+    width: 100px;
+    height: 100px;
+  }
+}
