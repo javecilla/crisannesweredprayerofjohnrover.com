@@ -214,6 +214,119 @@
   font-size: 1rem;
 }
 
+/* Photo Count Badge */
+.post .photo-count {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: var(--color-dirty-white);
+  color: var(--color-semi-dark);
+  border-radius: 16px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Uploaded Items Container */
+.post .upload-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #fafafa;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+/* Items Wrapper - Left Side */
+.post .upload-items .items-wrapper {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Individual Photo Card */
+.post .upload-items .items-wrapper .card {
+  position: relative;
+  padding: 0;
+  border: 2px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--color-white);
+  transition: all 0.3s;
+}
+
+.post .upload-items .items-wrapper .card:hover {
+  border-color: var(--color-semi-dark);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Delete Button on Each Photo */
+.post .upload-items .items-wrapper .card button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(220, 53, 69, 0.9);
+  color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 10;
+  padding: 0;
+}
+
+.post .upload-items .items-wrapper .card button:hover {
+  background-color: #dc3545;
+  transform: scale(1.1);
+}
+
+.post .upload-items .items-wrapper .card button i {
+  font-size: 14px;
+}
+
+/* Photo Image */
+.post .upload-items .items-wrapper .card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Clear All Button */
+.post .upload-items > button {
+  flex-shrink: 0;
+  padding: 8px 20px;
+  background-color: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.post .upload-items > button:hover {
+  background-color: #dc3545;
+  color: var(--color-white);
+}
+
+/* Hide upload items when empty */
+.post .upload-items.hidden {
+  display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 991px) {
   .post .content {
@@ -264,6 +377,27 @@
 
   .post .form-group {
     margin-bottom: 25px;
+  }
+
+  /* Upload items responsive */
+  .post .upload-items {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .post .upload-items .items-wrapper {
+    width: 100%;
+  }
+
+  .post .upload-items > button {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  .post .upload-items .items-wrapper .card img {
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -326,6 +460,42 @@
   }
 
   .post .reminder-text {
+    font-size: 0.9rem;
+  }
+
+  /* Upload items mobile */
+  .post .photo-count {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+
+  .post .upload-items {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .post .upload-items .items-wrapper {
+    gap: 10px;
+  }
+
+  .post .upload-items .items-wrapper .card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .post .upload-items .items-wrapper .card button {
+    width: 22px;
+    height: 22px;
+    top: 3px;
+    right: 3px;
+  }
+
+  .post .upload-items .items-wrapper .card button i {
+    font-size: 12px;
+  }
+
+  .post .upload-items > button {
+    padding: 8px 16px;
     font-size: 0.9rem;
   }
 }
