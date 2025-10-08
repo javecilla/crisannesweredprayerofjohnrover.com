@@ -22,7 +22,7 @@
     <link rel="sitemap" type="application/xml" href="/assets/sitemap.xml" />
 
     <!-- Primary Meta Tags -->
-    <title>Post Discussion - Kalat Mo Yaman Ko</title>
+    <title>Post Photo - Kalat Mo Yaman Ko</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
@@ -117,7 +117,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
     <link
       rel="stylesheet"
       type="text/css"
-      href="/assets/stylesheets/auth/pages/post-an-discussion/post.css"
+      href="/assets/stylesheets/auth/pages/post-an-photo/post.css"
     />
   </head>
   <body>
@@ -186,10 +186,10 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <a href="specific-discussion.html">Specific Discussion</a>
                 </li>
-                <li class="active">
+                <li>
                   <a href="post-discussion.html">Post a Discussion</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="post-photo.html">Post a Photo</a>
                 </li>
                 <li>
@@ -293,7 +293,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Community</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Post an Discussion
+                Post an Photo
               </li>
             </ol>
           </nav>
@@ -302,23 +302,27 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
           <div class="content">
             <!-- Left Side: Item Information -->
             <div class="left-side">
-              <h2 class="section-title">Discussion Information</h2>
+              <h2 class="section-title">Photo Information</h2>
 
               <div class="form-group">
-                <label for="discussionTitle" class="form-label">
-                  Discussion Title <span class="required">*</span>
+                <label for="photoName" class="form-label">
+                  Photo Name <span class="required">*</span>
                 </label>
-                <input type="text" class="form-control" id="discussionTitle" />
+                <input type="text" class="form-control" id="photoName" />
               </div>
 
               <div class="form-group">
-                <label for="channel" class="form-label">
-                  Channel<span class="required">*</span>
+                <label for="shortDescription" class="form-label">
+                  Short Description <span class="required">*</span>
                 </label>
-                <select class="form-select" id="channel">
-                  <option value="" selected disabled hidden></option>
-                  <option value="test">Test</option>
-                </select>
+                <span class="help-text"
+                  >Briefly describe your photo in one line.</span
+                >
+                <textarea
+                  id="shortDescription"
+                  class="form-control"
+                  rows="3"
+                ></textarea>
               </div>
             </div>
 
@@ -402,37 +406,15 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
 
             <!-- Bottom Section: Detailed Description & Submit -->
             <div class="bottom-section">
-              <div class="form-group">
-                <label for="detailedDiscussion" class="form-label">
-                  Detailed Discussion <span class="required">*</span>
-                </label>
-                <span class="help-text"
-                  >Explain your idea, question, or story in detail so others can
-                  understand and join the conversation.</span
-                >
-                <textarea
-                  id="detailedDiscussion"
-                  class="form-control large"
-                ></textarea>
-              </div>
-
               <div class="bottom-flex">
-                <div class="reminder-box">
-                  <div class="reminder-title">Reminder</div>
-                  <p class="reminder-text">
-                    Please keep discussions respectful, constructive, and
-                    on-topic. Kalat Mo, Yaman Ko is a space for community
-                    support, kindness, and sharing knowledge to promote
-                    sustainability.
-                  </p>
-                </div>
+                <div class="reminder-box"></div>
                 <div class="submit-area">
                   <button
                     type="button"
                     class="btn-post"
-                    onclick="window.location.href='discussions.html'"
+                    onclick="window.location.href='#'"
                   >
-                    <i class="fa-solid fa-plus"></i> Post Discussion
+                    <i class="fa-solid fa-plus"></i> Post Photo
                   </button>
                 </div>
               </div>
@@ -497,7 +479,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
     <!-- custom scripts -->
     <script
       type="application/javascript"
-      src="/assets/scripts/auth/pages/post-an-discussion/upload-photo.js"
+      src="/assets/scripts/auth/pages/post-an-photo/upload-photo.js"
     ></script>
   </body>
 </html>
