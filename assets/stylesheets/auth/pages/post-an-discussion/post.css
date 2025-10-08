@@ -1,0 +1,501 @@
+.post {
+  padding: 20px 0 60px 0;
+}
+
+.post .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Breadcrumb */
+.post .breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.post .breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+  color: var(--color-semi-dark);
+  padding: 0 8px;
+}
+
+.post .breadcrumb-item a {
+  color: var(--color-semi-dark);
+  text-decoration: underline;
+}
+
+.post .breadcrumb-item.active {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+/* Content Layout */
+.post .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Section Headings */
+.post .section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+}
+
+/* Form Groups */
+.post .form-group {
+  margin-bottom: 30px;
+}
+
+.post .form-label {
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 8px;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.post .form-label .required {
+  color: var(--color-yellow);
+  margin-left: 2px;
+}
+
+.post .help-text {
+  color: var(--color-black);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  display: block;
+  line-height: 1.5;
+}
+
+.post .form-control {
+  border: 3px solid var(--color-dirty-white);
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.2s;
+  background-color: var(--color-white);
+}
+
+.post .form-control:focus {
+  border-color: var(--color-green);
+  box-shadow: none;
+  outline: none;
+}
+
+.post textarea.form-control {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.post textarea.form-control.large {
+  min-height: 180px;
+}
+
+/* File Upload Area */
+.post .upload-area {
+  border: 3px dashed var(--color-dirty-white);
+  border-radius: 6px;
+  padding: 20px 10px;
+  text-align: center;
+  background-color: var(--color-white);
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.post .upload-area:hover {
+  border-color: var(--color-semi-dark);
+}
+
+.post .upload-area input[type='file'] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.post .upload-area .upload-icon {
+  font-size: 64px;
+  color: #c4c4c4;
+  margin-bottom: 15px;
+}
+
+.post .upload-area .upload-text {
+  color: #c4c4c4;
+  font-size: 1rem;
+}
+
+/* Select Dropdown */
+.post .form-select {
+  border: 3px solid var(--color-dirty-white);
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: var(--color-white);
+  cursor: pointer;
+  font-family: var(--main-font);
+}
+
+.post .form-select:focus {
+  border-color: var(--color-green);
+  box-shadow: none;
+  outline: none;
+}
+
+/* Bottom Section - Full Width */
+.post .bottom-section {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+}
+
+/* Reminder & Submit Area */
+.post .bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.post .reminder-box {
+  flex: 1;
+}
+
+.post .reminder-title {
+  font-weight: bolder;
+  color: var(--color-red);
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.post .reminder-text {
+  color: var(--color-black);
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.post .submit-area {
+  flex-shrink: 0;
+}
+
+.post .btn-post {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.post .btn-post:hover {
+  background-color: #157347;
+}
+
+.post .btn-post i {
+  font-size: 1rem;
+}
+
+/* Photo Count Badge */
+.post .photo-count {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: var(--color-dirty-white);
+  color: var(--color-semi-dark);
+  border-radius: 16px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Uploaded Items Container */
+.post .upload-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #fafafa;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+/* Items Wrapper - Left Side */
+.post .upload-items .items-wrapper {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Individual Photo Card */
+.post .upload-items .items-wrapper .card {
+  position: relative;
+  padding: 0;
+  border: 2px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--color-white);
+  transition: all 0.3s;
+}
+
+.post .upload-items .items-wrapper .card:hover {
+  border-color: var(--color-semi-dark);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Delete Button on Each Photo */
+.post .upload-items .items-wrapper .card button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(220, 53, 69, 0.9);
+  color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 10;
+  padding: 0;
+}
+
+.post .upload-items .items-wrapper .card button:hover {
+  background-color: #dc3545;
+  transform: scale(1.1);
+}
+
+.post .upload-items .items-wrapper .card button i {
+  font-size: 14px;
+}
+
+/* Photo Image */
+.post .upload-items .items-wrapper .card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Clear All Button */
+.post .upload-items > button {
+  flex-shrink: 0;
+  padding: 8px 20px;
+  background-color: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.post .upload-items > button:hover {
+  background-color: #dc3545;
+  color: var(--color-white);
+}
+
+/* Hide upload items when empty */
+.post .upload-items.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .post .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .post .bottom-flex {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+  }
+
+  .post .submit-area {
+    width: 100%;
+  }
+
+  .post .btn-post {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .post .container {
+    padding: 0 15px;
+  }
+
+  .post .section-title {
+    font-size: 1.1rem;
+  }
+
+  .post .form-label {
+    font-size: 0.95rem;
+  }
+
+  .post .help-text {
+    font-size: 0.9rem;
+  }
+
+  .post .upload-area {
+    padding: 60px 15px;
+  }
+
+  .post .upload-area .upload-icon {
+    font-size: 48px;
+  }
+
+  .post .form-group {
+    margin-bottom: 25px;
+  }
+
+  /* Upload items responsive */
+  .post .upload-items {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .post .upload-items .items-wrapper {
+    width: 100%;
+  }
+
+  .post .upload-items > button {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  .post .upload-items .items-wrapper .card img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 575px) {
+  .post {
+    padding: 15px 0 40px 0;
+  }
+
+  .post .breadcrumb {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .post .section-title {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .post .form-label {
+    font-size: 0.9rem;
+  }
+
+  .post .help-text {
+    font-size: 0.85rem;
+  }
+
+  .post .form-control,
+  .post .form-select {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  .post textarea.form-control {
+    min-height: 80px;
+  }
+
+  .post textarea.form-control.large {
+    min-height: 150px;
+  }
+
+  .post .upload-area {
+    padding: 50px 10px;
+  }
+
+  .post .upload-area .upload-icon {
+    font-size: 40px;
+  }
+
+  .post .upload-area .upload-text {
+    font-size: 0.9rem;
+  }
+
+  .post .btn-post {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+
+  .post .reminder-title {
+    font-size: 0.95rem;
+  }
+
+  .post .reminder-text {
+    font-size: 0.9rem;
+  }
+
+  /* Upload items mobile */
+  .post .photo-count {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+
+  .post .upload-items {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .post .upload-items .items-wrapper {
+    gap: 10px;
+  }
+
+  .post .upload-items .items-wrapper .card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .post .upload-items .items-wrapper .card button {
+    width: 22px;
+    height: 22px;
+    top: 3px;
+    right: 3px;
+  }
+
+  .post .upload-items .items-wrapper .card button i {
+    font-size: 12px;
+  }
+
+  .post .upload-items > button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
