@@ -22,7 +22,7 @@
     <link rel="sitemap" type="application/xml" href="/assets/sitemap.xml" />
 
     <!-- Primary Meta Tags -->
-    <title>Kalat Mo Yaman Ko</title>
+    <title>Post Item - Kalat Mo Yaman Ko</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
@@ -117,7 +117,7 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
     <link
       rel="stylesheet"
       type="text/css"
-      href="/assets/stylesheets/auth/pages/specifc-item/list.css"
+      href="/assets/stylesheets/auth/pages/post-an-item/post.css"
     />
   </head>
   <body>
@@ -174,10 +174,10 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
                 <li>
                   <a href="items.html">Items</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="post-item.html">Post an Item</a>
                 </li>
-                <li class="active">
+                <li>
                   <a href="specific-item.html">Specific Item</a>
                 </li>
                 <li>
@@ -286,287 +286,121 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
       </div>
     </nav>
     <main>
-      <section class="list">
+      <section class="post">
         <div class="container">
-          <div class="summary">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="items.html">Items</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Solid Wooden Table
-                </li>
-              </ol>
-            </nav>
-            <div class="content">
-              <div class="left-side">
-                <div class="card active-thumbnail">
-                  <span class="badge text-bg-warning">Category</span>
+          <!-- Breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="items.html">Items</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Post an Item
+              </li>
+            </ol>
+          </nav>
 
-                  <img
-                    src="/assets/images/wooden-table.png"
-                    class="at-big"
-                    alt="img"
-                  />
-                  <div class="thumbnails">
-                    <div class="card active">
-                      <img src="/assets/images/wooden-table-1.png" alt="img" />
-                    </div>
-                    <div class="card">
-                      <img src="/assets/images/wooden-table-2.png" alt="img" />
-                    </div>
-                    <div class="card">
-                      <img src="/assets/images/wooden-table-3.png" alt="img" />
-                    </div>
+          <!-- Form Content -->
+          <div class="content">
+            <!-- Left Side: Item Information -->
+            <div class="left-side">
+              <h2 class="section-title">Item Information</h2>
+
+              <div class="form-group">
+                <label for="itemName" class="form-label">
+                  Item Name <span class="required">*</span>
+                </label>
+                <input type="text" class="form-control" id="itemName" />
+              </div>
+
+              <div class="form-group">
+                <label for="shortDescription" class="form-label">
+                  Short Description <span class="required">*</span>
+                </label>
+                <span class="help-text"
+                  >Briefly describe your item in one line.</span
+                >
+                <textarea
+                  id="shortDescription"
+                  class="form-control"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Right Side: Photos & Category -->
+            <div class="right-side">
+              <div class="form-group">
+                <label for="photo" class="form-label">
+                  Photos <span class="required">*</span>
+                </label>
+                <span class="help-text"
+                  >Upload up to 5 clear images of the item. Make sure the item
+                  is clean and well-lit.</span
+                >
+                <div class="upload-area">
+                  <input type="file" id="photo" multiple accept="image/*" />
+                  <div class="upload-icon">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                  </div>
+                  <div class="upload-text">
+                    Drag and drop files here or upload.
                   </div>
                 </div>
               </div>
-              <div class="right-side">
-                <h2>Solid Wooden Table</h2>
-                <hr />
-                <p>
-                  A sturdy, pre-loved wooden table in good condition. Perfect
-                  for dining, study, or home office use. Free for pickup in
-                  Pulilan.
-                </p>
-                <div class="actions">
-                  <button type="button" class="btn btn-warning add-watchlist">
-                    <i class="fa-solid fa-heart"></i> Add to Watchlist
-                  </button>
-                  <button type="button" class="btn btn-success request">
-                    <img
-                      src="/assets/images/hand-offer-arrowdown.png"
-                      width="25"
-                      alt="icon"
-                    />
-                    Request
-                  </button>
-                </div>
-                <ul>
-                  <li><strong>Posted by:</strong> Mary Allyson Caba</li>
-                  <li><strong>Date Posted: </strong> August 5, 2025</li>
-                  <li>
-                    <strong>Location:</strong> Barangay Tabon, Pulilan, Bulacan
-                  </li>
-                  <li><strong>Category:</strong> Home & Living</li>
-                  <li><strong>Condition:</strong> Gently Used</li>
-                  <li>
-                    <strong>Status:</strong>
-                    <span class="status-item">Available</span>
-                  </li>
-                </ul>
+
+              <div class="form-group">
+                <label for="category" class="form-label">
+                  Category <span class="required">*</span>
+                </label>
+                <select class="form-select" id="category">
+                  <option value="" selected disabled hidden></option>
+                  <option value="clothing">Clothing & Accessories</option>
+                  <option value="books">Books & Stationery</option>
+                  <option value="toys">Toys & Games</option>
+                  <option value="home">Home & Living</option>
+                  <option value="tools">Tools & DIY</option>
+                  <option value="electronics">Electronics & Gadgets</option>
+                  <option value="baby">Baby & Kids</option>
+                  <option value="school">School Supplies</option>
+                  <option value="hygiene">Hygiene & Personal Care</option>
+                  <option value="pets">Pet Supplies</option>
+                  <option value="hobbies">Hobbies & Crafts</option>
+                  <option value="kitchen">Kitchen & Pantry</option>
+                </select>
               </div>
             </div>
-          </div>
-          <div class="details">
-            <div class="navtab-container">
-              <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button
-                    class="nav-link active"
-                    id="description-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#description"
-                    type="button"
-                    role="tab"
-                    aria-controls="description"
-                    aria-selected="true"
-                  >
-                    Description
-                  </button>
-                  <button
-                    class="nav-link"
-                    id="comments-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#comments"
-                    type="button"
-                    role="tab"
-                    aria-controls="comments"
-                    aria-selected="false"
-                  >
-                    Comments
-                  </button>
-                </div>
-              </nav>
-              <div class="tab-content" id="nav-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="description"
-                  role="tabpanel"
-                  aria-labelledby="description-tab"
-                  tabindex="0"
+
+            <!-- Bottom Section: Detailed Description & Submit -->
+            <div class="bottom-section">
+              <div class="form-group">
+                <label for="detailedDescription" class="form-label">
+                  Detailed Description <span class="required">*</span>
+                </label>
+                <span class="help-text"
+                  >Provide more details like size, condition, how long you've
+                  had it, or any notes about wear and tear.</span
                 >
-                  <p>
-                    This solid mahogany wooden table has served us well and is
-                    ready for a new home! It's rectangular, spacious, and ideal
-                    for various uses—from family meals to work-from-home setups.
-                    Though it has minor surface scratches from regular use, it's
-                    still very stable and reliable. The natural wood finish adds
-                    a rustic charm to any space. Offered for free—just bring
-                    your own transport for pickup. Let's give it a second life!
+                <textarea
+                  id="detailedDescription"
+                  class="form-control large"
+                ></textarea>
+              </div>
+
+              <div class="bottom-flex">
+                <div class="reminder-box">
+                  <div class="reminder-title">Reminder</div>
+                  <p class="reminder-text">
+                    Please do not post broken, hazardous, or illegal items.<br />Kalat
+                    Mo, Yaman Ko is a space for community support, kindness, and
+                    sustainability.
                   </p>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="comments"
-                  role="tabpanel"
-                  aria-labelledby="comments-tab"
-                  tabindex="0"
-                >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Eos consequatur earum recusandae corrupti, labore mollitia
-                    consectetur dicta dolorem nobis, error facere doloremque
-                    culpa tenetur molestiae praesentium a voluptates explicabo
-                    esse.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="related-items">
-            <h3>Related Items</h3>
-            <div class="items">
-              <div class="card">
-                <!-- float above thumbnail -->
-                <div class="header-content">
-                  <button type="button">
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-                <img
-                  src="/assets/images/related-items1.png"
-                  class="img-items"
-                  alt="img"
-                />
-                <div class="body-content">
-                  <h6>Item Name</h6>
-                  <span>Condition: Gently Used</span>
-                  <p>Description preview...</p>
-                </div>
-                <div class="footer-content">
-                  <button type="button" class="btn btn-success">
-                    <img
-                      src="/assets/images/hand-offer-arrowdown.png"
-                      width="25"
-                      alt="icon"
-                    />
-                    Request
-                  </button>
-                </div>
-              </div>
-
-              <div class="card">
-                <!-- float above thumbnail -->
-                <div class="header-content">
-                  <button type="button">
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-                <img
-                  src="/assets/images/related-items2.png"
-                  class="img-items"
-                  alt="img"
-                />
-                <div class="body-content">
-                  <h6>Item Name</h6>
-                  <span>Condition: Gently Used</span>
-                  <p>Description preview...</p>
-                </div>
-                <div class="footer-content">
-                  <button type="button" class="btn btn-success">
-                    <img
-                      src="/assets/images/hand-offer-arrowdown.png"
-                      width="25"
-                      alt="icon"
-                    />
-                    Request
-                  </button>
-                </div>
-              </div>
-
-              <div class="card">
-                <!-- float above thumbnail -->
-                <div class="header-content">
-                  <button type="button">
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-                <img
-                  src="/assets/images/related-items3.png"
-                  class="img-items"
-                  alt="img"
-                />
-                <div class="body-content">
-                  <h6>Item Name</h6>
-                  <span>Condition: Gently Used</span>
-                  <p>Description preview...</p>
-                </div>
-                <div class="footer-content">
-                  <button type="button" class="btn btn-success">
-                    <img
-                      src="/assets/images/hand-offer-arrowdown.png"
-                      width="25"
-                      alt="icon"
-                    />
-                    Request
-                  </button>
-                </div>
-              </div>
-
-              <div class="card">
-                <!-- float above thumbnail -->
-                <div class="header-content">
-                  <button type="button">
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-                <img
-                  src="/assets/images/related-items4.png"
-                  class="img-items"
-                  alt="img"
-                />
-                <div class="body-content">
-                  <h6>Item Name</h6>
-                  <span>Condition: Gently Used</span>
-                  <p>Description preview...</p>
-                </div>
-                <div class="footer-content">
-                  <button type="button" class="btn btn-success">
-                    <img
-                      src="/assets/images/hand-offer-arrowdown.png"
-                      width="25"
-                      alt="icon"
-                    />
-                    Request
-                  </button>
-                </div>
-              </div>
-
-              <div class="card">
-                <!-- float above thumbnail -->
-                <div class="header-content">
-                  <button type="button">
-                    <i class="fa-regular fa-heart"></i>
-                  </button>
-                </div>
-                <img
-                  src="/assets/images/related-items5.png"
-                  class="img-items"
-                  alt="img"
-                />
-                <div class="body-content">
-                  <h6>Item Name</h6>
-                  <span>Condition: Gently Used</span>
-                  <p>Description preview...</p>
-                </div>
-                <div class="footer-content">
-                  <button type="button" class="btn btn-success">
-                    <img
-                      src="/assets/images/hand-offer-arrowdown.png"
-                      width="25"
-                      alt="icon"
-                    />
-                    Request
+                <div class="submit-area">
+                  <button
+                    type="button"
+                    class="btn-post"
+                    onclick="window.location.href='items.html'"
+                  >
+                    <i class="fa-solid fa-plus"></i> Post Item
                   </button>
                 </div>
               </div>
@@ -629,9 +463,5 @@ Share, receive, and make a difference through reuse, reduce, and recycle."
     ></script>
 
     <!-- custom scripts -->
-    <!-- <script
-      type="application/javascript"
-      src="/assets/scripts/auth/pages/specific-item/navtab.js"
-    ></script> -->
   </body>
 </html>

@@ -6,34 +6,27 @@
 }
 
 /* Breadcrumb */
-.list .summary nav {
-  margin-bottom: 20px;
-}
-
 .list .breadcrumb {
   background: transparent;
   padding: 0;
-  margin: 0;
+  margin-bottom: 30px;
   font-size: 14px;
 }
 
 .list .breadcrumb-item + .breadcrumb-item::before {
   content: '>';
-  color: #6c757d;
+  color: var(--color-semi-dark);
+  padding: 0 8px;
 }
 
 .list .breadcrumb-item a {
-  color: #198754;
-  text-decoration: none;
-}
-
-.list .breadcrumb-item a:hover {
+  color: var(--color-semi-dark);
   text-decoration: underline;
 }
 
 .list .breadcrumb-item.active {
-  color: #000;
-  font-weight: 500;
+  color: var(--color-black);
+  font-weight: 600;
 }
 
 /* Summary Content */
