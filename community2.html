@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" type="image/png" href="/assets/meta/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/meta/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/meta/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/meta/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="sitemap" type="application/xml" href="/assets/sitemap.xml" />
+
+    <!-- Primary Meta Tags -->
+    <title>Community - Kalat Mo Yaman Ko</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="title" content="Kalat Mo Yaman Ko" />
+    <meta
+      name="description"
+      content="Kalat Mo, Yaman Ko is a community-driven platform that helps you give away
+pre-loved items to people who need them. Promote the 3Rs—Reduce, Reuse,
+and Recycle—while building a circular economy in your own neighborhood."
+    />
+    <meta
+      name="abstract"
+      content="Join a growing movement where your unused items find new purpose.
+Share, receive, and make a difference through reuse, reduce, and recycle."
+    />
+    <meta
+      name="keywords"
+      content="Kalat Mo Yaman Ko, Bulacan State University"
+    />
+    <meta name="copyright" content="Kalat Mo Yaman Ko" />
+
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      name="bingbot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta
+      name="google-site-verification"
+      content="TEST_yn3h_XIX46hpOTXbkr1gnJnX5jjg1Lesyv_xOJHbR9g"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <!-- Twitter -->
+    <!-- Additional SEO Tags -->
+    <!-- Mobile App Meta Tags -->
+    <!-- Geo Tags (Philippines) -->
+    <!-- Schema.org structured data -->
+    <!-- Google Tag Manager -->
+
+    <!-- libs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/libs/bootstrap/bootstrap@5.3.2/css/bootstrap.min.css"
+      loading="eager"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/libs/fontawesome/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- layout css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/navbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/common/layout/footer.css"
+    />
+
+    <!-- custom css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/auth/pages/community/discussion.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/auth/pages/community/calendar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/stylesheets/auth/pages/community/lists.css"
+    />
+  </head>
+  <body>
+    <header class="sticky-top bg-white shadow-sm">
+      <div class="container-fluid py-2">
+        <div class="d-flex justify-content-end">
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            class="menu-content offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title invisible" id="offcanvasExampleLabel">
+                Menu
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="quick-links">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="community.html">Community</a>
+                </li>
+                <li>
+                  <a href="terms-and-conditions.html">Terms & Condition</a>
+                </li>
+                <li>
+                  <a href="login.html">Login</a>
+                </li>
+                <li>
+                  <a href="register.html">Register</a>
+                </li>
+                <li>
+                  <a href="items.html">Items</a>
+                </li>
+                <li>
+                  <a href="post-item.html">Post an Item</a>
+                </li>
+                <li>
+                  <a href="specific-item.html">Specific Item</a>
+                </li>
+                <li>
+                  <a href="discussions.html">Discussions</a>
+                </li>
+                <li>
+                  <a href="specific-discussion.html">Specific Discussion</a>
+                </li>
+                <li>
+                  <a href="post-discussion.html">Post a Discussion</a>
+                </li>
+                <li>
+                  <a href="post-photo.html">Post a Photo</a>
+                </li>
+                <li>
+                  <a href="specific-resource.html">Specific Resource</a>
+                </li>
+                <li>
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a href="messaging.html">Messaging</a>
+                </li>
+                <li>
+                  <a href="profile.html">Profile</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/app-logo-name1.png" alt="logo-name" />
+        </a>
+
+        <div id="client-side" class="d-none">
+          <!-- Center Links - Hidden on mobile -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms-and-conditions.html"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right-aligned buttons - Always visible -->
+          <div class="navbar-nav flex-row gap-2">
+            <a
+              href="register.html"
+              class="btn btn-outline-secondary nav-btn nav-btn-register"
+              >Register</a
+            >
+            <a href="login.html" class="btn btn-secondary nav-btn nav-btn-login"
+              >Login</a
+            >
+          </div>
+        </div>
+
+        <div id="auth-side">
+          <!-- centered search input -->
+          <div class="search-container">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+
+          <!-- right navigations links -->
+          <div class="actions-container">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="items.html">Items</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+            </ul>
+            <img src="/assets/images/profile-anime.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="discussion">
+        <div class="container">
+          <div class="hero">
+            <div class="left-content">
+              <h1>Welcome to <br />Kalat Mo, Yaman Ko's Community!</h1>
+              <p>
+                This is where stories, smiles, and shared values come together.
+                Here, we don’t just give and receive — we build a culture of
+                generosity, sustainability, and connection.
+              </p>
+            </div>
+            <div class="right-content">
+              <img src="/assets/images/halaman-sa-gear.png" alt="img" />
+            </div>
+          </div>
+          <div class="channels">
+            <div class="left-content">
+              <h4>Channels</h4>
+              <p>
+                Organized spaces for focused conversations. Explore different
+                topics like item exchanges, DIY tips, sustainability, and
+                community stories. Each channel helps you connect with others
+                who share your interests or needs.
+              </p>
+            </div>
+            <div class="right-content">
+              <button type="button" class="btn btn-success btn-post-discussion">
+                <i class="fas fa-solid fa-plus"></i> Post a Discussion
+              </button>
+            </div>
+            <div class="channel-lists">
+              <a href="/discussion.html">
+                <div class="card">
+                  <img src="/assets/images/notebook-pen-icon.png" alt="icon" />
+                  <h6>Item Requests & Offer</h6>
+                </div>
+              </a>
+              <a href="/discussion.html">
+                <div class="card">
+                  <img src="/assets/images/recycle-icon.png" alt="icon" />
+                  <h6>Upcycling & DIY Tips</h6>
+                </div>
+              </a>
+              <a href="/discussion.html">
+                <div class="card">
+                  <img src="/assets/images/walis-tambo-icon.png" alt="icon" />
+                  <h6>Decluttering Help</h6>
+                </div>
+              </a>
+              <a href="/discussion.html">
+                <div class="card">
+                  <img src="/assets/images/double-quote-icon.png" alt="icon" />
+                  <h6>Stories & Testimonials</h6>
+                </div>
+              </a>
+              <a href="/discussion.html">
+                <div class="card">
+                  <img src="/assets/images/danger-square-icon.png" alt="icon" />
+                  <h6>Reports & Suggestions</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="highlights">
+            <div class="left-content">
+              <h4>Community Highlights</h4>
+              <h6>Your Moments. Our Movement.</h6>
+              <p>
+                Check out photos from our generous community! <br />
+                From successful item exchanges to upcycled projects — every
+                photo tells a story of hope and sustainability.
+              </p>
+            </div>
+            <div class="right-content">
+              <button type="button" class="btn btn-success btn-post-photo">
+                <i class="fas fa-solid fa-plus"></i> Post a Photo
+              </button>
+            </div>
+          </div>
+          <!-- naka layout to autmatically bahala kana pano ka mag render ng data/images here. -->
+          <div class="photos-masonry">
+            <img src="/assets/images/default-image.png" alt="img" />
+            <img src="/assets/images/default-image-3.png" alt="img" />
+            <img src="/assets/images/default-image-4.png" alt="img" />
+            <img src="/assets/images/default-image-5.png" alt="img" />
+            <img src="/assets/images/default-image-6.png" alt="img" />
+            <img src="/assets/images/default-image-7.png" alt="img" />
+            <img src="/assets/images/default-image-8.png" alt="img" />
+            <img src="/assets/images/default-image-9.png" alt="img" />
+            <img src="/assets/images/default-image-10.png" alt="img" />
+            <img src="/assets/images/default-image-11.png" alt="img" />
+            <img src="/assets/images/default-image-6.png" alt="img" />
+            <img src="/assets/images/default-image-10.png" alt="img" />
+            <img src="/assets/images/default-image-4.png" alt="img" />
+            <img src="/assets/images/default-image.png" alt="img" />
+            <img src="/assets/images/default-image-8.png" alt="img" />
+            <img src="/assets/images/default-image-3.png" alt="img" />
+            <img src="/assets/images/default-image-7.png" alt="img" />
+          </div>
+          <div class="bulletin">
+            <div class="content">
+              <h4>Community Bulletin</h4>
+              <div class="calendar">
+                <div>
+                  <!-- <h6>Calendar</h6>
+                  <ul class="nav nav-tabs" id="calendarTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="monthly-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#monthly"
+                        type="button"
+                        role="tab"
+                        aria-controls="monthly"
+                        aria-selected="true"
+                      >
+                        Monthly
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="weekly-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#weekly"
+                        type="button"
+                        role="tab"
+                        aria-controls="weekly"
+                        aria-selected="false"
+                      >
+                        Weekly
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="daily-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#daily"
+                        type="button"
+                        role="tab"
+                        aria-controls="daily"
+                        aria-selected="false"
+                      >
+                        Daily
+                      </button>
+                    </li>
+                  </ul> -->
+                </div>
+
+                <div class="tab-content" id="calendarTabsContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="monthly"
+                    role="tabpanel"
+                    aria-labelledby="monthly-tab"
+                  >
+                    <!-- <h3>Monthly</h3>
+                    <p>Some content.</p> -->
+                    <div id="calendar-monthly"></div>
+                    <!-- <div id="calendar" style="height: 800px"></div> -->
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="weekly"
+                    role="tabpanel"
+                    aria-labelledby="weekly-tab"
+                  >
+                    <h3>Weekly</h3>
+                    <p>Some content in Weekly.</p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="daily"
+                    role="tabpanel"
+                    aria-labelledby="daily-tab"
+                  >
+                    <h3>Daily</h3>
+                    <p>Some content in daily.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lists-content">
+            <div class="content">
+              <h4>Educational Corner</h4>
+              <p>Learn. Reuse. Inspire.</p>
+            </div>
+            <div class="wrapper">
+              <a href="specific-resource.html?id=1">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Title</h6>
+                      <span>Video</span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-resource.html?id=1">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Title</h6>
+                      <span>Video</span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-resource.html?id=1">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Title</h6>
+                      <span>Video</span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-resource.html?id=1">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Title</h6>
+                      <span>Video</span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-resource.html?id=1">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Title</h6>
+                      <span>Video</span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="specific-resource.html?id=1">
+                <div class="card">
+                  <div class="header-content">
+                    <img src="/assets/images/profile-anime.png" alt="img" />
+                    <span class="badge text-bg-warning">Category</span>
+                  </div>
+                  <img src="/assets/images/default-image.png" alt="img" />
+                  <div class="body-content">
+                    <div class="left-side">
+                      <h6>Title</h6>
+                      <span>Video</span>
+                      <p>Description preview...</p>
+                    </div>
+                    <div class="right-side"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div class="container">
+          <div class="left-content">
+            <img src="/assets/images/app-logo-name2-removebg.png" alt="logo" />
+            <h6>Have questions, feedback, or suggestions?</h6>
+            <p>
+              Whether you're posting an item, requesting something, or simply
+              exploring the community, we're here to help you make the most out
+              of sharing and sustainability. Reach out to our team anytime!
+            </p>
+          </div>
+          <div class="right-content">
+            <h5>CONTACT</h5>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-location-dot"></i> Bulacan
+                  State University</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-envelope"></i>
+                  kmym@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="footer-icon fa-solid fa-phone"></i> Need help? Call
+                  us 09917445294</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2025 Kalat Mo, Yaman Ko. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <!-- libs scripts -->
+    <script
+      type="application/javascript"
+      src="/assets/libs/bootstrap/bootstrap@5.3.2/js/bootstrap.min.js"
+      loading="eager"
+    ></script>
+    <script
+      type="application/javascript"
+      src="/assets/libs/fontawesome/js/all.min.js"
+    ></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+
+    <script>
+      // SOLUTION 1: Using imagesLoaded library (RECOMMENDED)
+      const grid = document.querySelector('.photos-masonry')
+
+      // Initialize Masonry
+      const masonry = new Masonry(grid, {
+        itemSelector: 'img',
+        columnWidth: 200,
+        gutter: 10,
+        fitWidth: true
+      })
+
+      // Wait for images to load, then layout
+      imagesLoaded(grid, function () {
+        masonry.layout()
+      })
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const calendarEl = document.getElementById('calendar-monthly')
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+          },
+          events: [
+            {
+              title: 'Event',
+              start: '2025-10-01',
+              color: '#ffc107'
+            },
+            {
+              title: 'Announcement',
+              start: '2025-10-07',
+              color: '#198754'
+            },
+            {
+              title: 'Announcement',
+              start: '2025-10-17',
+              color: '#198754'
+            },
+            {
+              title: 'Announcement',
+              start: '2025-10-20',
+              // end: '2025-10-21',
+              color: '#198754'
+            },
+            {
+              title: 'Event',
+              start: '2025-10-20',
+              color: '#ffc107'
+            },
+            {
+              title: 'Announcement',
+              start: '2025-10-28',
+              color: '#198754'
+            }
+          ],
+          eventClick: function (info) {
+            alert('Event: ' + info.event.title)
+          }
+        })
+        calendar.render()
+      })
+    </script>
+
+    <!-- custom scripts -->
+  </body>
+</html>

@@ -1,0 +1,131 @@
+#calendar-monthly {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Header (Month/Year Title) */
+.fc .fc-toolbar-title {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #198754 !important; /* Green title */
+}
+
+/* Buttons (Prev, Next, Today) */
+.fc .fc-button-primary {
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+}
+
+.fc .fc-button-primary:hover {
+  background-color: #157347 !important;
+  border-color: #157347 !important;
+}
+
+.fc .fc-button-primary:disabled {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+}
+
+/* Day Headers (Sun, Mon, Tue...) */
+.fc .fc-col-header-cell {
+  background-color: #f8f9fa !important;
+  font-weight: 600 !important;
+  color: #212529 !important;
+  border-color: #dee2e6 !important;
+}
+
+/* Weekday Header */
+.fc-col-header-cell-cushion {
+  color: var(--color-black) !important;
+}
+
+/* Day Cells */
+.fc .fc-daygrid-day {
+  background-color: #ffffff !important;
+  border-color: #dee2e6 !important;
+}
+
+/* Today's Date Highlight */
+.fc .fc-day-today {
+  background-color: #e8f5e9 !important; /* Light green */
+}
+
+/* Day Numbers */
+.fc .fc-daygrid-day-number {
+  color: #212529 !important;
+  font-weight: 500 !important;
+  padding: 8px !important;
+}
+
+/* Events */
+.fc-event {
+  border-radius: 4px !important;
+  padding: 2px 4px !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  border: none !important;
+}
+
+/* Event hover effect */
+.fc-event:hover {
+  opacity: 0.85 !important;
+  cursor: pointer !important;
+}
+
+/* Remove event dot */
+.fc .fc-daygrid-event-dot {
+  display: none !important;
+}
+
+/* Event time text */
+.fc .fc-event-time {
+  font-weight: 600 !important;
+}
+
+/* More link (when too many events) */
+.fc .fc-daygrid-more-link {
+  color: #198754 !important;
+  font-weight: 600 !important;
+}
+
+/* Weekend days styling */
+.fc .fc-day-sat,
+.fc .fc-day-sun {
+  background-color: #f8f9fa !important;
+}
+
+/* Custom class for different event types */
+.fc-event.event-type-announcement {
+  background-color: #198754 !important;
+  color: white !important;
+}
+
+.fc-event.event-type-event {
+  background-color: #ffc107 !important;
+  color: #000000 !important;
+}
+
+.fc-event.event-type-meeting {
+  background-color: #0d6efd !important;
+  color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  #calendar-monthly {
+    padding: 10px;
+  }
+
+  .fc .fc-toolbar-title {
+    font-size: 1.2rem !important;
+  }
+
+  .fc .fc-button {
+    padding: 0.3rem 0.6rem !important;
+    font-size: 0.85rem !important;
+  }
+}
