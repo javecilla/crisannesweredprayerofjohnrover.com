@@ -1,0 +1,244 @@
+.resource {
+  padding: 20px 0 60px 0;
+  font-family: var(--main-font), sans-serif;
+}
+
+.resource .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Breadcrumb */
+.resource .breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.resource .breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+  color: var(--color-semi-dark);
+  padding: 0 8px;
+}
+
+.resource .breadcrumb-item a {
+  color: var(--color-semi-dark);
+  text-decoration: underline;
+}
+
+.resource .breadcrumb-item.active {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+/* Hero Image */
+.resource .hero {
+  margin-bottom: 30px;
+  overflow: hidden;
+  max-height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.resource .hero img {
+  width: 82%;
+  height: auto;
+  display: block;
+}
+
+/* Details Section */
+.resource .details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.resource .details .left-side h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.resource .details .left-side hr {
+  border: none;
+  border-top: 2px solid var(--color-semi-dark);
+  margin-bottom: 10px;
+  opacity: 0.1;
+}
+
+.resource .details .left-side p {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: var(--color-green);
+  margin-bottom: 8px;
+}
+
+.resource .details .left-side span {
+  font-weight: 600;
+}
+
+.resource .details .right-side p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-black);
+}
+
+/* Context Section - 3Rs */
+.resource .context {
+  margin-bottom: 40px;
+}
+
+.resource .context > div {
+  margin-bottom: 30px;
+}
+
+.resource .context h4 {
+  font-size: 1.2;
+  font-weight: bolder;
+  color: var(--color-black);
+  margin-bottom: 12px;
+}
+
+.resource .context p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-black);
+}
+.reduce,
+.recycle {
+  text-align: start;
+}
+.reuse {
+  text-align: end;
+}
+
+/* Insight Section - Two Column */
+.resource .insight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+
+.resource .insight h6 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 15px;
+}
+
+.resource .insight p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-black);
+  margin-bottom: 15px;
+  margin-left: 3rem;
+}
+
+.resource .insight ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 4rem;
+}
+
+.resource .insight ul li {
+  font-size: 1.1rem;
+  color: var(--color-black);
+  margin-bottom: 2px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.resource .insight ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-black);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.insight .right-side {
+  border-left: 2px solid #d7d6d6;
+  padding-left: 3rem;
+}
+
+/* Engage Section - CTA */
+.resource .engage {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.resource .engage h6 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: var(--color-black);
+  margin-bottom: 10px;
+}
+
+.resource .engage p {
+  font-size: 1.1rem;
+  color: var(--color-black);
+}
+
+.resource .engage a {
+  color: var(--color-green);
+  text-decoration: underline;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+}
+
+.resource .engage a:hover {
+  color: var(--color-light-green);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resource .details {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .resource .details .left-side h2 {
+    font-size: 24px;
+  }
+
+  .resource .insight {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .resource .context h4 {
+    font-size: 18px;
+  }
+
+  .resource .engage {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resource {
+    padding: 15px 0 40px 0;
+  }
+
+  .resource .container {
+    padding: 0 15px;
+  }
+
+  .resource .details .left-side h2 {
+    font-size: 20px;
+  }
+
+  .resource .breadcrumb {
+    font-size: 12px;
+  }
+}
