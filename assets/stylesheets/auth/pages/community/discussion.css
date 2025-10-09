@@ -219,16 +219,6 @@
 }
 
 /* Community Bulletin Styles */
-:root {
-  --color-green: #198754;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-dark: #212529;
-  --color-semi-dark: #6c757d;
-  --color-light-gray: #f8f9fa;
-  --color-border: #dee2e6;
-}
-
 .bulletin {
   padding: 40px 0;
   background-color: var(--color-white);
