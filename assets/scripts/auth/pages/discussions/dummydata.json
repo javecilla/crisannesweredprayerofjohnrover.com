@@ -1,0 +1,604 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Sarah Chen",
+      "title": "Looking for a working microwave in Quezon City",
+      "channel": "Item Requests & Offers",
+      "description": "Hi everyone! My microwave just broke and I'm hoping someone has one they're not using. Willing to pick up anywhere in QC. Can trade for books or plants!",
+      "likes": 234,
+      "comments": 15
+    },
+    {
+      "id": 2,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Miguel Santos",
+      "title": "Free office chairs available - 5 pieces",
+      "channel": "Item Requests & Offers",
+      "description": "Our office is downsizing and we have 5 office chairs to give away. They're in good condition, just minor wear. First come first serve!",
+      "likes": 567,
+      "comments": 42
+    },
+    {
+      "id": 3,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Emma Rodriguez",
+      "title": "How to turn old jeans into a tote bag",
+      "channel": "Upcycling & DIY Tips",
+      "description": "Just finished making a super cute tote bag from my old denim jeans! It's easier than you think. Anyone interested in a tutorial?",
+      "likes": 892,
+      "comments": 67
+    },
+    {
+      "id": 4,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Carlo Reyes",
+      "title": "Need help decluttering my garage",
+      "channel": "Decluttering Help",
+      "description": "My garage has become a dumping ground and I don't know where to start. Any tips on how to organize and what to keep vs donate?",
+      "likes": 156,
+      "comments": 28
+    },
+    {
+      "id": 5,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Lisa Tan",
+      "title": "The impact of fast fashion on our environment",
+      "channel": "Sustainability & Environment",
+      "description": "Did you know that the fashion industry is responsible for 10% of global carbon emissions? Let's discuss how we can make more sustainable choices.",
+      "likes": 1024,
+      "comments": 89
+    },
+    {
+      "id": 6,
+      "user": "/assets/images/profile-anime.png",
+      "name": "David Kim",
+      "title": "My journey to zero waste living",
+      "channel": "Stories & Testimonials",
+      "description": "It's been 6 months since I started my zero waste journey. Here's what I learned and how it changed my life for the better.",
+      "likes": 743,
+      "comments": 54
+    },
+    {
+      "id": 7,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Anna Garcia",
+      "title": "Suggestion: Add a furniture category",
+      "channel": "Reports & Suggestions",
+      "description": "Would it be possible to add a dedicated furniture category? I think it would make it easier for people to find what they need.",
+      "likes": 312,
+      "comments": 23
+    },
+    {
+      "id": 8,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Ramon Cruz",
+      "title": "Giving away children's books and toys",
+      "channel": "Item Requests & Offers",
+      "description": "My kids have outgrown these books and toys. All in excellent condition. Perfect for ages 3-7. Available for pickup in Novaliches.",
+      "likes": 445,
+      "comments": 31
+    },
+    {
+      "id": 9,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Jessica Wong",
+      "title": "Wine bottle planters - step by step guide",
+      "channel": "Upcycling & DIY Tips",
+      "description": "Transform empty wine bottles into beautiful hanging planters! All you need is some rope, a cutting tool, and creativity. Here's how I did it.",
+      "likes": 678,
+      "comments": 45
+    },
+    {
+      "id": 10,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Paolo Martinez",
+      "title": "Minimalist bedroom transformation tips?",
+      "channel": "Decluttering Help",
+      "description": "I want to transform my bedroom into a minimalist space. What should I keep and what should I let go? Need practical advice!",
+      "likes": 289,
+      "comments": 37
+    },
+    {
+      "id": 11,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Sofia Lim",
+      "title": "Composting 101: A beginner's guide",
+      "channel": "Sustainability & Environment",
+      "description": "Starting a compost bin is easier than you think! Let me share my experience and tips for anyone who wants to reduce food waste.",
+      "likes": 856,
+      "comments": 72
+    },
+    {
+      "id": 12,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Mark Fernandez",
+      "title": "How I saved 10k pesos by fixing instead of buying",
+      "channel": "Stories & Testimonials",
+      "description": "Instead of buying new appliances, I learned to fix them. Here's how it saved me money and helped reduce waste at the same time.",
+      "likes": 921,
+      "comments": 63
+    },
+    {
+      "id": 13,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Rachel Aquino",
+      "title": "Report: Spam posts in Item Requests section",
+      "channel": "Reports & Suggestions",
+      "description": "I've noticed some spam posts with external links in the Item Requests section. Can the moderators take a look?",
+      "likes": 167,
+      "comments": 12
+    },
+    {
+      "id": 14,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Ben Castillo",
+      "title": "Looking for a laptop for online classes",
+      "channel": "Item Requests & Offers",
+      "description": "My nephew needs a laptop for his online classes. Doesn't need to be fancy, just functional. Any kind soul willing to help?",
+      "likes": 534,
+      "comments": 28
+    },
+    {
+      "id": 15,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Nina Velasco",
+      "title": "Turn old t-shirts into cleaning rags",
+      "channel": "Upcycling & DIY Tips",
+      "description": "Stop buying paper towels! Old cotton t-shirts make the best reusable cleaning rags. Here's the simple method I use to cut and prepare them.",
+      "likes": 423,
+      "comments": 19
+    },
+    {
+      "id": 16,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Gary Tan",
+      "title": "Help! Too many sentimental items",
+      "channel": "Decluttering Help",
+      "description": "I struggle to let go of things with sentimental value. How do you decide what to keep? Any tips for dealing with emotional attachment to objects?",
+      "likes": 612,
+      "comments": 58
+    },
+    {
+      "id": 17,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Isabel Ramos",
+      "title": "Plastic-free alternatives for daily use",
+      "channel": "Sustainability & Environment",
+      "description": "I've been replacing plastic items in my home with sustainable alternatives. Here's my list of easy swaps that actually work!",
+      "likes": 1156,
+      "comments": 94
+    },
+    {
+      "id": 18,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Andre Lopez",
+      "title": "From hoarder to minimalist in one year",
+      "channel": "Stories & Testimonials",
+      "description": "A year ago, I couldn't walk through my apartment. Today, I live with less than 100 items. This is my transformation story.",
+      "likes": 1423,
+      "comments": 112
+    },
+    {
+      "id": 19,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Catherine Yu",
+      "title": "Feature request: Rating system for users",
+      "channel": "Reports & Suggestions",
+      "description": "Would be great to have a rating system so we can build trust in the community. What do others think about this idea?",
+      "likes": 678,
+      "comments": 45
+    },
+    {
+      "id": 20,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Luis Mendoza",
+      "title": "Free kitchen appliances - moving sale",
+      "channel": "Item Requests & Offers",
+      "description": "Moving abroad and need to give away kitchen items: blender, rice cooker, toaster, pots and pans. Everything works perfectly!",
+      "likes": 789,
+      "comments": 67
+    },
+    {
+      "id": 21,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Mia Santos",
+      "title": "Cardboard box organizers for drawers",
+      "channel": "Upcycling & DIY Tips",
+      "description": "Before you recycle those Amazon boxes, try this! I made custom drawer organizers that fit perfectly and cost absolutely nothing.",
+      "likes": 567,
+      "comments": 34
+    },
+    {
+      "id": 22,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Tony Perez",
+      "title": "The one-year rule for decluttering",
+      "channel": "Decluttering Help",
+      "description": "If you haven't used something in a year, do you really need it? Let's discuss this rule and whether it works for everyone.",
+      "likes": 445,
+      "comments": 52
+    },
+    {
+      "id": 23,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Jasmine Lee",
+      "title": "Why I stopped using single-use plastics",
+      "channel": "Sustainability & Environment",
+      "description": "Single-use plastics are everywhere, but breaking free is possible. Here are the simple steps I took to eliminate them from my life.",
+      "likes": 934,
+      "comments": 76
+    },
+    {
+      "id": 24,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Robert Chang",
+      "title": "My family's journey to conscious consumption",
+      "channel": "Stories & Testimonials",
+      "description": "Teaching kids about sustainability was challenging at first. Here's how we made it fun and turned it into a family mission.",
+      "likes": 823,
+      "comments": 61
+    },
+    {
+      "id": 25,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Erica Gomez",
+      "title": "Suggestion: Weekly donation drive meetups",
+      "channel": "Reports & Suggestions",
+      "description": "What if we organized weekly meetups where people can bring items to donate or exchange? Would anyone be interested in this?",
+      "likes": 712,
+      "comments": 58
+    },
+    {
+      "id": 26,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Vincent Diaz",
+      "title": "Need a bike for my daily commute",
+      "channel": "Item Requests & Offers",
+      "description": "Trying to reduce my carbon footprint by biking to work. Does anyone have a spare bicycle they're not using? Any condition is fine!",
+      "likes": 378,
+      "comments": 24
+    },
+    {
+      "id": 27,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Olivia Tan",
+      "title": "Mason jar storage solutions that changed my life",
+      "channel": "Upcycling & DIY Tips",
+      "description": "I've been saving glass jars for months and now my kitchen is perfectly organized! Here are 10 creative ways to use them.",
+      "likes": 645,
+      "comments": 41
+    },
+    {
+      "id": 28,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Henry Cruz",
+      "title": "Closet decluttering: where to start?",
+      "channel": "Decluttering Help",
+      "description": "My closet is overflowing with clothes I never wear. What's the best method to decide what stays and what goes?",
+      "likes": 523,
+      "comments": 47
+    },
+    {
+      "id": 29,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Grace Lim",
+      "title": "The hidden cost of cheap fast furniture",
+      "channel": "Sustainability & Environment",
+      "description": "That cheap IKEA desk might seem like a deal, but what's the environmental cost? Let's talk about sustainable furniture alternatives.",
+      "likes": 867,
+      "comments": 71
+    },
+    {
+      "id": 30,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Daniel Rivera",
+      "title": "How this community helped me start fresh",
+      "channel": "Stories & Testimonials",
+      "description": "After a tough breakup, I had to rebuild my apartment from scratch. This community's generosity made it possible. Thank you all!",
+      "likes": 1245,
+      "comments": 89
+    },
+    {
+      "id": 31,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Samantha Wu",
+      "title": "Report: Duplicate posts in multiple channels",
+      "channel": "Reports & Suggestions",
+      "description": "Some users are posting the same content across multiple channels. Should we have a rule against this to keep things organized?",
+      "likes": 234,
+      "comments": 18
+    },
+    {
+      "id": 32,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Kevin Reyes",
+      "title": "Offering free gardening tools and pots",
+      "channel": "Item Requests & Offers",
+      "description": "Downsizing my garden and have extra tools, pots, and soil. Perfect for anyone wanting to start their own garden. Free pickup in Fairview!",
+      "likes": 456,
+      "comments": 33
+    },
+    {
+      "id": 33,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Lily Gonzales",
+      "title": "Egg carton seed starters for your garden",
+      "channel": "Upcycling & DIY Tips",
+      "description": "Don't throw away those egg cartons! They make perfect biodegradable seed starters. Here's my simple method for starting your garden.",
+      "likes": 789,
+      "comments": 52
+    },
+    {
+      "id": 34,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Chris Navarro",
+      "title": "Digital decluttering - yes, it's a thing!",
+      "channel": "Decluttering Help",
+      "description": "We talk about physical clutter, but what about digital? My phone had 10,000 photos! Here's how I tackled digital decluttering.",
+      "likes": 691,
+      "comments": 44
+    },
+    {
+      "id": 35,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Amanda Flores",
+      "title": "Water conservation tips for your home",
+      "channel": "Sustainability & Environment",
+      "description": "Simple changes made me reduce water usage by 40%. Here are practical tips that don't require expensive equipment or major lifestyle changes.",
+      "likes": 1034,
+      "comments": 82
+    },
+    {
+      "id": 36,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Jason Villanueva",
+      "title": "From consumer to conscious citizen",
+      "channel": "Stories & Testimonials",
+      "description": "I used to shop every weekend out of boredom. Now I find joy in what I already have. Here's how I changed my relationship with stuff.",
+      "likes": 978,
+      "comments": 73
+    },
+    {
+      "id": 37,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Melissa Torres",
+      "title": "Suggestion: Add a success stories section",
+      "channel": "Reports & Suggestions",
+      "description": "It would be inspiring to have a dedicated section for success stories about sustainability and decluttering. What do you all think?",
+      "likes": 567,
+      "comments": 39
+    },
+    {
+      "id": 38,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Eric Morales",
+      "title": "Looking for baby items for my newborn",
+      "channel": "Item Requests & Offers",
+      "description": "First-time parent here! Looking for gently used baby clothes, bottles, and toys. Babies grow so fast, hoping someone can help us out!",
+      "likes": 623,
+      "comments": 41
+    },
+    {
+      "id": 39,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Sophia Ramos",
+      "title": "Furniture restoration with chalk paint",
+      "channel": "Upcycling & DIY Tips",
+      "description": "Transformed my old wooden dresser with chalk paint and new handles. It looks brand new! Here's a before and after plus tips.",
+      "likes": 912,
+      "comments": 68
+    },
+    {
+      "id": 40,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Brian Castro",
+      "title": "The KonMari method - does it really work?",
+      "channel": "Decluttering Help",
+      "description": "Thinking about trying the KonMari method for decluttering. Has anyone here tried it? Would love to hear your experiences!",
+      "likes": 734,
+      "comments": 87
+    },
+    {
+      "id": 41,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Victoria Chen",
+      "title": "Local farmers markets vs supermarkets",
+      "channel": "Sustainability & Environment",
+      "description": "Switching to local farmers markets reduced my plastic waste dramatically. Plus, fresher food and supporting local farmers. Win-win!",
+      "likes": 1123,
+      "comments": 96
+    },
+    {
+      "id": 42,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Nathan Santos",
+      "title": "How I furnished my apartment for free",
+      "channel": "Stories & Testimonials",
+      "description": "Moved to Manila with nothing. Thanks to this community, I now have a fully furnished apartment without spending a peso. Forever grateful!",
+      "likes": 1567,
+      "comments": 124
+    },
+    {
+      "id": 43,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Laura Mendez",
+      "title": "Feature idea: Item reservation system",
+      "channel": "Reports & Suggestions",
+      "description": "It would be helpful to have a way to reserve items so multiple people don't show up for the same thing. Thoughts?",
+      "likes": 489,
+      "comments": 32
+    },
+    {
+      "id": 44,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Ryan Pascual",
+      "title": "Giving away study table and chair",
+      "channel": "Item Requests & Offers",
+      "description": "My son graduated and doesn't need these anymore. Study table with drawers and ergonomic chair. Great for students!",
+      "likes": 701,
+      "comments": 53
+    },
+    {
+      "id": 45,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Jennifer Kim",
+      "title": "Tin can planters with a vintage look",
+      "channel": "Upcycling & DIY Tips",
+      "description": "Save those tin cans! With some paint and creativity, they become beautiful vintage-style planters. Step-by-step guide included.",
+      "likes": 834,
+      "comments": 47
+    },
+    {
+      "id": 46,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Matthew Cruz",
+      "title": "Decluttering when you live with family",
+      "channel": "Decluttering Help",
+      "description": "Anyone else struggling to declutter when family members keep bringing stuff home? How do you navigate this without causing conflict?",
+      "likes": 567,
+      "comments": 78
+    },
+    {
+      "id": 47,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Ashley Lopez",
+      "title": "The true cost of food waste",
+      "channel": "Sustainability & Environment",
+      "description": "Did you know Filipinos waste about 9 million tons of food yearly? Let's discuss practical ways to reduce food waste at home.",
+      "likes": 1245,
+      "comments": 103
+    },
+    {
+      "id": 48,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Brandon Reyes",
+      "title": "Minimalism helped my mental health",
+      "channel": "Stories & Testimonials",
+      "description": "Less stuff = less stress. Here's how decluttering and minimalism improved my anxiety and overall mental wellbeing.",
+      "likes": 1689,
+      "comments": 142
+    },
+    {
+      "id": 49,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Christine Tan",
+      "title": "Report: Inappropriate language in comments",
+      "channel": "Reports & Suggestions",
+      "description": "I've noticed some comments with inappropriate language. Can we strengthen our community guidelines?",
+      "likes": 312,
+      "comments": 27
+    },
+    {
+      "id": 50,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Justin Garcia",
+      "title": "Need art supplies for community workshop",
+      "channel": "Item Requests & Offers",
+      "description": "Organizing a free art workshop for kids in our barangay. Anyone have spare art supplies like paints, brushes, or paper?",
+      "likes": 823,
+      "comments": 64
+    },
+    {
+      "id": 51,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Diana Velasco",
+      "title": "Pallet wood furniture projects",
+      "channel": "Upcycling & DIY Tips",
+      "description": "Made a coffee table from recycled pallets! It's sturdy, looks amazing, and cost next to nothing. Here's how you can do it too.",
+      "likes": 1045,
+      "comments": 79
+    },
+    {
+      "id": 52,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Peter Jimenez",
+      "title": "Sentimental clutter - how to let go",
+      "channel": "Decluttering Help",
+      "description": "My late grandmother's belongings are taking up my entire storage room. How do I honor her memory while still letting go?",
+      "likes": 891,
+      "comments": 112
+    },
+    {
+      "id": 53,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Michelle Santos",
+      "title": "Eco-friendly cleaning products you can make",
+      "channel": "Sustainability & Environment",
+      "description": "Stop buying expensive toxic cleaners! Vinegar, baking soda, and lemon can clean almost everything. Here are my favorite recipes.",
+      "likes": 1456,
+      "comments": 118
+    },
+    {
+      "id": 54,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Kevin Alvarez",
+      "title": "Paid off debt by selling unused items",
+      "channel": "Stories & Testimonials",
+      "description": "Decluttered my home and sold items I never used. Made enough to pay off my credit card debt! Here's my strategy.",
+      "likes": 2134,
+      "comments": 167
+    },
+    {
+      "id": 55,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Stephanie Lim",
+      "title": "Suggestion: Mobile app for easier browsing",
+      "channel": "Reports & Suggestions",
+      "description": "A mobile app would make it so much easier to check listings on the go. Is this something the team is considering?",
+      "likes": 934,
+      "comments": 71
+    },
+    {
+      "id": 56,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Gregory Torres",
+      "title": "Free textbooks for college students",
+      "channel": "Item Requests & Offers",
+      "description": "Graduated and have a bunch of college textbooks in good condition. Free for any student who needs them. Various subjects available!",
+      "likes": 678,
+      "comments": 48
+    },
+    {
+      "id": 57,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Rebecca Diaz",
+      "title": "Old ladder shelf transformation",
+      "channel": "Upcycling & DIY Tips",
+      "description": "Turned an old wooden ladder into a beautiful bookshelf! Super easy project that adds character to any room. Tutorial in comments.",
+      "likes": 1267,
+      "comments": 93
+    },
+    {
+      "id": 58,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Andrew Rosales",
+      "title": "Paper clutter management system",
+      "channel": "Decluttering Help",
+      "description": "Bills, receipts, documents everywhere! I finally created a system that works. Here's my approach to conquering paper clutter.",
+      "likes": 723,
+      "comments": 56
+    },
+    {
+      "id": 59,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Nicole Fernandez",
+      "title": "Community gardens and urban farming",
+      "channel": "Sustainability & Environment",
+      "description": "Started a small urban farm on my roof. Growing vegetables reduces grocery bills and carbon footprint. Anyone else doing this?",
+      "likes": 1345,
+      "comments": 107
+    },
+    {
+      "id": 60,
+      "user": "/assets/images/profile-anime.png",
+      "name": "Joshua Martinez",
+      "title": "This community saved me during the pandemic",
+      "channel": "Stories & Testimonials",
+      "description": "Lost my job during lockdown. Kind strangers from this group helped me with groceries and essentials. I'm employed again and giving back now!",
+      "likes": 2456,
+      "comments": 189
+    }
+  ]
+}
