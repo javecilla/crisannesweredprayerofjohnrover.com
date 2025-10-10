@@ -37,7 +37,7 @@ function initializeDOMElements() {
 
 function createItemCard(item) {
   return `
-  <a href="#">
+  <a href="specific-discussion.html?id=${item.id}">
     <div class="card">
       <div class="header">
         <img src="${item.user}" alt="img" />
