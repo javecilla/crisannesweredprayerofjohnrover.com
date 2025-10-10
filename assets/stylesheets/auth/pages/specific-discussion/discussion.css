@@ -1,0 +1,307 @@
+.discussion {
+  padding: 20px 0 60px 0;
+  font-family: var(--main-font), sans-serif;
+}
+
+.discussion .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Breadcrumb */
+.discussion .breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.discussion .breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+  color: var(--color-semi-dark);
+  padding: 0 8px;
+}
+
+.discussion .breadcrumb-item a {
+  color: var(--color-semi-dark);
+  text-decoration: underline;
+}
+
+.discussion .breadcrumb-item.active {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+/* Main Content */
+.discussion .content {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+/* Profile Section */
+.discussion .profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.discussion .profile .left-side img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.discussion .profile .right-side {
+  flex: 1;
+}
+
+.discussion .profile .about {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.discussion .profile .about h5 {
+  margin: 0;
+  color: var(--color-green);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.discussion .profile .about span {
+  color: #666;
+}
+
+.discussion .profile .right-side > p {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Context Section */
+.discussion .context h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: #000;
+  line-height: 1.3;
+}
+
+.discussion .context > p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* React Actions */
+.discussion .react-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.discussion .react-actions > div {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  color: #666;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.discussion .react-actions > div:hover {
+  opacity: 0.7;
+}
+
+.discussion .react-actions img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.discussion .react-actions span {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Input Container */
+.discussion .input-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.discussion .input-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.discussion .input-container input {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  border-radius: 1px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background: var(--color-white);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.discussion .input-container input:focus {
+  border-color: var(--color-green);
+}
+
+.discussion .input-container input::placeholder {
+  color: #9ca3af;
+}
+
+.discussion .input-container .btn-comment {
+  padding: 0.75rem 2rem;
+  background: var(--color-green);
+  color: var(--color-white);
+  border: none;
+  border-radius: 1px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.discussion .input-container .btn-comment:hover {
+  background: var(--color-green);
+}
+
+/* Horizontal Rule */
+.discussion hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 2rem 0;
+}
+
+/* Comments Section */
+.discussion .comments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.discussion .comments .item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.discussion .comments .item > img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.discussion .comments .info {
+  flex: 1;
+}
+
+.discussion .comments .user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.discussion .comments .user h5 {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.discussion .comments .user span {
+  color: #666;
+}
+
+.discussion .comments .info > p {
+  margin: 0 0 1rem 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.discussion .comments .info .react-actions {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .discussion .content {
+    padding: 1.5rem;
+  }
+
+  .discussion .context h1 {
+    font-size: 1.5rem;
+  }
+
+  .discussion .input-container {
+    flex-wrap: wrap;
+  }
+
+  .discussion .input-container input {
+    width: 100%;
+  }
+
+  .discussion .input-container .btn-comment {
+    width: 100%;
+  }
+
+  .discussion .comments .item {
+    padding: 1rem;
+  }
+
+  .discussion .comments .item > img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .discussion .container {
+    padding: 0 15px;
+  }
+
+  .discussion .profile {
+    gap: 0.75rem;
+  }
+
+  .discussion .profile .left-side img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .discussion .react-actions {
+    gap: 1rem;
+  }
+
+  .discussion .context h1 {
+    font-size: 1.25rem;
+  }
+}
